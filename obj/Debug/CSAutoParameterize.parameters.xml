@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ConnectionString-Web.config Connection String" description="ConnectionString Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultvalue="Provider=SQLOLEDB;Data Source=172.19.51.225;Password=fiscamovil;User ID=fiscamovil;Initial Catalog=sireca" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="ConnectionStringFiscamovil-Web.config Connection String" description="ConnectionStringFiscamovil Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultvalue="Provider=SQLOLEDB;Data Source=172.19.51.225;Password=fiscamovil;User ID=fiscamovil;Initial Catalog=fiscamovil" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnectionStringFiscamovil']/@connectionString" />
+  </parameter>
+  <parameter name="ConnectionStringMaster-Web.config Connection String" description="ConnectionStringMaster Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultvalue="Provider=SQLOLEDB;Data Source=172.19.51.225;Persist Security Info=True;Password=fiscamovil;User ID=fiscamovil" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnectionStringMaster']/@connectionString" />
+  </parameter>
+  <parameter name="ConnectionStringMasterSql-Web.config Connection String" description="ConnectionStringMasterSql Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultvalue="Data Source=172.19.51.225;User ID=fiscamovil;Password=fiscamovil" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnectionStringMasterSql']/@connectionString" />
+  </parameter>
+  <parameter name="sirecacobrosConnectionString-Web.config Connection String" description="sirecacobrosConnectionString Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultvalue="Data Source=172.19.51.225;Initial Catalog=sirecacobros;User ID=fiscamovil;Password=fiscamovil" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='sirecacobrosConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

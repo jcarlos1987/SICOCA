@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox12">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Label>html</Label>
+                <Value>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body style="font-family: Arial; font-size: 9px"&gt;
+&lt;table width="100%" border="0" cellpadding="0" cellspacing="0"&gt;
+  &lt;tr&gt;
+    &lt;td style="width: 900px"&gt;
+	&lt;table border="1" cellpadding="0" cellspacing="0"&gt;
+      &lt;tr&gt;
+        &lt;td style="width: 78px; height: 73px" &gt;
+			&lt;img src="http://localhost:59723/pruebas/logoImss.png" alt="imss" height="73" width="73"/&gt;&lt;/td&gt;
+        &lt;td style="width: 900px" &gt;INSTITUTO MEXICANO DEL SEGURO SOCIAL&lt;br /&gt;
+        SEGURIDAD Y SOLIDARIDAD SOCIAL&lt;br /&gt;
+        DELEGACION ESTATAL YUCATAN&lt;br /&gt;
+        SUBDELEGACION MERIDA NORTE&lt;br /&gt;
+        OFICINA PARA COBROS MERIDA NORTE&lt;br /&gt;
+        DOMICILIO: CALLE 7 No. 131 POR 38 COL. PENSIONES&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;&lt;/td&gt;
+    &lt;td style="text-align: right; vertical-align: top; top: 7px;" &gt;&lt;strong&gt;COFI 01&lt;/strong&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+	&lt;table border="1" cellpadding="0" cellspacing="0" style="width: 100%"&gt;
+		&lt;tr&gt;
+			&lt;td colspan="3"&gt;&amp;nbsp;DEUDOR:&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td &gt;&amp;nbsp;REGISTRO PATRONAL:&lt;/td&gt;
+			&lt;td colspan="2"&gt;&amp;nbsp;ACTIVIDAD:&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td colspan="3"&gt;&amp;nbsp;DOMICILIO&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td colspan="2"&gt;&amp;nbsp;C.P.:&lt;/td&gt;
+			&lt;td &gt;&amp;nbsp;SECTOR:&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td colspan="3"&gt;&amp;nbsp;LOCALIDAD:&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+	  &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td align="center" colspan="2"&gt;DETALLES DEL ADEUDO&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="width: 602px"&gt;CUOTAS OBRERO PATRONALES&lt;/td&gt;
+    &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+	&lt;table border="1" style="width: 100%"&gt;
+		&lt;tr align="center" style="font-weight: bold"&gt;
+			&lt;td&gt;N&amp;uacute;mero de Cr&amp;eacute;dito&lt;/td&gt;
+			&lt;td&gt;Periodo&lt;/td&gt;
+			&lt;td&gt;Importe&lt;/td&gt;
+			&lt;td&gt;N&amp;uacute;mero de Cr&amp;eacute;dito&lt;/td&gt;
+			&lt;td&gt;periodo&lt;/td&gt;
+			&lt;td&gt;Importe&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+	  &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="width: 602px; height: 19px;"&gt;&lt;/td&gt;
+    &lt;td style="height: 19px"&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td align="center" colspan="2"&gt;&lt;strong&gt;MANDAMIENTO DE EJECUCI&amp;Oacute;N&lt;/strong&gt;&lt;br /&gt;
+	En M&amp;Eacute;RIDA, Y&amp;Uacute;CATAN a [fecha]&lt;br /&gt;&lt;br /&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2" style="text-align: justify"&gt;
+
+    De las constancias que obran en el expediente formado en este Instituto a 
+	nombre del deudor citado al rubro, se desprende que el adeudo arriba 
+	detallado, mismo que fue debidamente determinado en cantidad liquida y 
+	notificado al deudor, no fue cubierto ni garantizado dentro del t&amp;eacute;rmino que 
+	para ese efecto se&amp;ntilde;alan los art&amp;iacute;culos 39 de la Ley del Seguro Social, 127 
+	del Reglamento de la Ley del Seguro Social en Materia de Afiliaci&amp;oacute;n, 
+	Clasificaci&amp;oacute;n de Empresas, Recaudaci&amp;oacute;n y Fiscalizaci&amp;oacute;n, y 144, primer 
+	p&amp;aacute;rrafo, del C&amp;oacute;digo Fiscal de la Federaci&amp;oacute;n, por lo que son exigibles para 
+	los efectos del art&amp;iacute;culo 145 del C&amp;oacute;digo citado, en correlaci&amp;oacute;n con los 
+	art&amp;iacute;culos 251, fracci&amp;oacute;n XXV, 251 A, 287 y 291 de la Ley del Seguro Social en 
+	vigor.&lt;br /&gt;
+	En tal virtud, el suscrito Jefe de la Oficina para Cobros del IMSS, en 
+	ejercicio de las facultades que le confiere el art&amp;iacute;culo 271 de la Ley del 
+	Seguro Social en vigor, as&amp;iacute; como en los art&amp;iacute;culos ; 2, primer p&amp;aacute;rrafo, 
+	fracci&amp;oacute;n VI, incisos b) y c), 138, 139 y 142, primer p&amp;aacute;rrafo fracciones II y 
+	III, 154, primer p&amp;aacute;rrafo, fracciones I, II y VIII y 155, primer p&amp;aacute;rrafo, 
+	fracci&amp;oacute;n XXXII, inciso a), del Reglamento Interior del Instituto Mexicano 
+	del Seguro Social vigente, emite el presente mandamiento de ejecuci&amp;oacute;n y 
+	determina:&lt;br /&gt;
+	PRIMERO.- Es procedente exigir el pago de los cr&amp;eacute;ditos fiscales referidos 
+	mediante el procedimiento administrativo de ejecuci&amp;oacute;n, por lo que se ordena 
+	al Ejecutor designado, que en los t&amp;eacute;rminos de los art&amp;iacute;culos 151, 152 y 153 
+	del C&amp;oacute;digo citado, requiera de pago al deudor para que en el mismo acto del 
+	requerimiento acredite el pago efectuado de los cr&amp;eacute;ditos se&amp;ntilde;alados al rubro, 
+	y de no hacerlo, se le embarguen bienes de su propiedad suficientes para 
+	obtener el pago correspondiente mediante su remate o venta fuera de remate.&lt;br /&gt;
+
+	SEGUNDO.- Para cumplir lo ordenado en el punto que antecede, se designa a 
+	los CC. CARLOS ROBERTO AGUILERA ESCAMILLA, FLOR GUADALUPE MEDINA HERNANDEZ, 
+	JAVIER ALEJANDRO GONGORA LEAL, MANUEL ALEJANDRO GAMBOA SERRANO, ROBERTO 
+	DAVID AMAYA CHAVEZ, JOSE ROBERTO CARRILLO FRAYDE, para el efecto que de 
+	manera conjunta o separada, practiquen el requerimiento de pago y el embargo 
+	en su caso, y con fundamento en el Art&amp;iacute;culo 153 del propio C&amp;oacute;digo Fiscal, 
+	designen depositario de los bienes que embargue.&lt;br /&gt;
+
+	TERCERO.- Con fundamento en el Art&amp;iacute;culo 13 del C&amp;oacute;digo Fiscal de la 
+	Federaci&amp;oacute;n, se habilita 
+	________________________________________________________ para la pr&amp;aacute;ctica de 
+	la diligencia de que se trata, en virtud de 
+	___________________________________________________________________________.&lt;br /&gt;
+
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2" align="center"&gt;&lt;br /&gt;
+    LO ACUERDA Y FIRMA&lt;br /&gt;
+EL JEFE DE LA OFICINA PARA COBROS DEL IMSS M&amp;Eacute;RIDA NORTE&lt;br /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2" style="text-align: center"&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;________________________________________________________&lt;/strong&gt;&lt;br /&gt;
+LIC. YAJAIRA MARIA CAMPOS SABIDO&lt;br /&gt;
+CASY821024N25&lt;br/&gt;&lt;br /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2" style="text-align: center"&gt;&lt;br /&gt;
+    LO ACUERDA Y FIRMA&lt;br /&gt;
+EL JEFE DE LA OFICINA PARA COBROS DEL IMSS M&amp;Eacute;RIDA NORTE&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;________________________________________________________&lt;br /&gt;
+LIC. YAJAIRA MARIA CAMPOS SABIDO&lt;br /&gt;
+CASY821024N25&lt;br/&gt;&lt;br /&gt;
+&lt;/strong&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    &lt;td colspan="2" align="center"&gt;&lt;strong&gt;REQUERIMIENTO DE PAGO&lt;/strong&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td style="text-align: justify;" colspan="2"&gt;
+    En ______________________________________ a las _________ horas del d&amp;iacute;a ____________ de _______________________ de ______, fecha y hora se&amp;ntilde;alados en el citatorio de fecha _______ de _________________ de ________, del que se anexa copia, formulado al patr&amp;oacute;n o su representante legal para llevar a cabo la presente diligencia, el suscrito ejecutor se constituye en el domicilio fiscal del patr&amp;oacute;n citado al rubro, para dar cumplimiento al Mandamiento de Ejecuci&amp;oacute;n que antecede, dictado por el Jefe de la Oficina para Cobros del Instituto Mexicano del Seguro Social citado al rubro, para lo cual se identifica con _______________________________________________________________, ante la persona que en este momento se encuentra en dicho domicilio, quien manifiesta llamarse _____________________________________, e informa a requerimiento del ejecutor, que el patr&amp;oacute;n deudor o su representante legal __________________________ se encuentra presente en este momento. En tal virtud, se procede a realizar las diligencias ordenadas, entendi&amp;eacute;ndolas con el C. ___________________________________________, en su car&amp;aacute;cter de __________________________________ quien se encuentra presente en el domicilio antes se&amp;ntilde;alado y se identifica con _________________________________________________, para lo cual en este acto se le requiere que acredite el pago efectuado del cr&amp;eacute;dito fiscal se&amp;ntilde;alado al rubro, apercibi&amp;eacute;ndole que en caso de no acreditarlo o no realizarlo en este momento, se proceder&amp;aacute; de inmediato a embargar bienes suficientes para garantizarlo, habiendo manifestado: 
+( ) Que el cr&amp;eacute;dito fiscal citado al rubro, ya fue pagado y entrega copia simple del comprobante de pago expedido por el banco___________________________________________________, el d&amp;iacute;a ______ del mes________________ de __________ con n&amp;uacute;mero de folio _________________ e importe de $___________________. 
+(   ) Que en este acto efect&amp;uacute;a el pago del cr&amp;eacute;dito y sus accesorios, y el C. Ejecutor le entrega recibo provisional n&amp;uacute;mero _______________ por la cantidad de $ ________________________ (_________________________________________________), inform&amp;aacute;ndole que deber&amp;aacute; canjearlo, por el comprobante de pago respectivo, ante la Oficina Ejecutora, por lo que se da por concluida la presente diligencia.
+(   ) Que no puede acreditar el pago ni puede cubrir desde luego el adeudo, por lo que se procede al embargo en los t&amp;eacute;rminos del acta que aparece en el cuerpo de este documento.
+
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2" align="center"&gt;&lt;strong&gt;ACTA DE EMBARGO&lt;/strong&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2" style="text-align: justify"&gt;
+    En vista de no haberse acreditado el pago del cr&amp;eacute;dito fiscal en el requerimiento, el suscrito ejecutor inicia la diligencia de embargo, indicando a la persona con quien se entiende la diligencia, el derecho que tiene a designar dos testigos y a se&amp;ntilde;alar bienes en que trabar ejecuci&amp;oacute;n, haciendo de su conocimiento que los mismos deben ser de f&amp;aacute;cil realizaci&amp;oacute;n o venta, y advirti&amp;eacute;ndole que de negarse a se&amp;ntilde;alarlos o no hacerlo en el orden que establece el art&amp;iacute;culo 155 del C&amp;oacute;digo Fiscal de la Federaci&amp;oacute;n, lo har&amp;aacute; el ejecutor con apoyo en el art&amp;iacute;culo 156 del propio Ordenamiento. Asimismo, se le hace saber que en caso de se&amp;ntilde;alar para embargo bienes inmuebles, deber&amp;aacute; manifestar, bajo protesta de decir verdad, si dichos bienes reportan cualquier gravamen real, embargo anterior, se encuentran en copropiedad o 
+	&lt;span class="auto-style1"&gt;pertenecen&lt;/span&gt; a sociedad conyugal alguna, y que tales hechos deber&amp;aacute; acreditarlos ante la Oficina ejecutora dentro de los 15 d&amp;iacute;as siguientes a la presente diligencia.
+    &lt;br/&gt;
+    A continuaci&amp;oacute;n, el C. ________________________________________________________ procede, _______________ la intervenci&amp;oacute;n de testigos, a se&amp;ntilde;alar para embargo los bienes siguientes:
+&lt;br/&gt; 
+
+	&lt;table border="0" style="width: 100%;" cellpadding="0" cellspacing="0"&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&amp;nbsp;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom: thin solid #000000; width: 15px; height: 14px;" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #000000; height: 15px;"" &gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+
+		&lt;/table&gt;
+
+&lt;br/&gt;
+    &lt;/td&gt;    
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2" style="text-align: justify"&gt;
+Acto seguido, el suscrito ejecutor traba embargo en los bienes descritos y con fundamento en el art&amp;iacute;culo 153 del C&amp;oacute;digo Fiscal de la Federaci&amp;oacute;n, nombra depositario de los mismos al C. ___________________________________________________________ quien acepta el cargo y protesta su fiel desempe&amp;ntilde;o, recibe los bienes de conformidad, se&amp;ntilde;ala como su domicilio particular ______________________________________________________ que comprueba con _______________________________________________, quedando enterado que deber&amp;aacute; custodiar los bienes y conservarlos a disposici&amp;oacute;n del Instituto Mexicano del Seguro Social, para entregarlos cuando as&amp;iacute; le sea requerido, quedando enterado de las obligaciones y responsabilidades se&amp;ntilde;aladas en los Art&amp;iacute;culos 112, 153, 161, y 164 al 167 del C&amp;oacute;digo Fiscal de la Federaci&amp;oacute;n.
+&lt;br/&gt;
+Se hace constar que se entrega a la persona con quien se entienden las diligencias, copia del Mandamiento de Ejecuci&amp;oacute;n con firma aut&amp;oacute;grafa del Jefe de la Oficina Ejecutora, y copia del acta de las presentes diligencias, que firman las personas que intervinieron en las mismas y quisieron hacerlo, cuyos cargos y nombres se indican al calce. 
+&lt;br/&gt;
+El presente acto administrativo de conformidad con el art&amp;iacute;culo 23 de la Ley Federal de los Derechos del Contribuyente vigente, que en contra del presente acto (o resoluci&amp;oacute;n), el medio de defensa procedente es el Recurso de Revocaci&amp;oacute;n, cuyo plazo de presentaci&amp;oacute;n es de cuarenta y cinco d&amp;iacute;as h&amp;aacute;biles siguientes a aqu&amp;eacute;l en que haya surtido efectos su notificaci&amp;oacute;n, y que deber&amp;aacute; interponerse directamente ante esta Oficina Para Cobros del IMSS, o bien, puede optar por promover el Juicio Contencioso Administrativo Federal, ante la Sala Regional competente del Tribunal Federal de Justicia Fiscal y Administrativa, en la v&amp;iacute;a tradicional por escrito, o a trav&amp;eacute;s del Sistema de Justicia en L&amp;iacute;nea, cuyo plazo de interposici&amp;oacute;n para cualquiera de ellos, es de cuarenta y cinco d&amp;iacute;as h&amp;aacute;biles siguientes a aqu&amp;eacute;l en que haya surtido efectos la notificaci&amp;oacute;n del acto (o resoluci&amp;oacute;n). O bien, podr&amp;aacute; optarse, por tramitar en la v&amp;iacute;a sumaria el Juicio Contencioso Administrativo Federal, cuando se impugnen resoluciones definitivas, cuyo importe no exceda de cinco veces el salario m&amp;iacute;nimo general vigente en el Distrito Federal elevado al a&amp;ntilde;o al momento de su emisi&amp;oacute;n. La demanda deber&amp;aacute; presentarse dentro de los quince d&amp;iacute;as siguientes a aqu&amp;eacute;l en que surta efectos la notificaci&amp;oacute;n de la resoluci&amp;oacute;n impugnada; lo anterior con base en los art&amp;iacute;culos 13, 58-1 y 58-2 de la Ley Federal del Procedimiento Contencioso Administrativo vigente y 295 de la Ley del Seguro Social vigente.
+
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="width: 602px"&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</Value>
+                <MarkupType>HTML</MarkupType>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox12</rd:DefaultName>
+        <Top>0.33549cm</Top>
+        <Left>0.46778cm</Left>
+        <Height>8.19354cm</Height>
+        <Width>15.5175cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>3.50963in</Height>
+    <Style />
+  </Body>
+  <Width>6.5in</Width>
+  <Page>
+    <PageHeader>
+      <Height>2.54cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>2.54cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <rd:ReportID>205dad4a-c95a-49a5-905a-742cbf191d17</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

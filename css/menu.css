@@ -1,0 +1,36 @@
+﻿body {
+}
+.headciclo
+{
+    font-size: 20px; 
+    font-weight: bold;
+}
+.divciclo
+{
+    font-size : 15px;
+    font-style: italic;
+    text-align: justify;
+}
+.buttonMenu
+{
+    transition:All 1s ease;
+    -webkit-transition:All 1s ease;
+    -moz-transition:All 1s ease;
+    -o-transition:All 1s ease;
+    transform:  rotate(0deg) scale(1) skew(1deg) translate(2px); 
+    -webkit-transform:  rotate(0deg) scale(1) skew(1deg) translate(2px);
+    -moz-transform:  rotate(0deg) scale(1) skew(1deg) translate(2px);
+    -o-transform:  rotate(0deg) scale(1) skew(1deg) translate(2px);
+    -ms-transform:  rotate(0deg) scale(1) skew(1deg) translate(2px);
+}
+.buttonMenu:hover
+{
+    transform:  rotate(0deg) scale(1.5) skew(1deg) translate(0px);
+    -webkit-transform:  rotate(0deg) scale(1.5) skew(1deg) translate(0px);
+    -moz-transform:  rotate(0deg) scale(1.5) skew(1deg) translate(0px);
+    -o-transform:  rotate(0deg) scale(1.5) skew(1deg) translate(0px);
+    -ms-transform:  rotate(0deg) scale(1.5) skew(1deg) translate(0px);
+    -moz-box-shadow: 1px  2px  50px  #0af50a;
+    -webkit-box-shadow: 1px  2px  50px  #0af50a;
+    box-shadow: 1px  2px  50px  #0af50a;
+}

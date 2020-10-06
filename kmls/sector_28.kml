@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>sector 28</name>
+  <description><![CDATA[sector 28 norte
+]]></description>
+  <Style id="style23">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style28">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style36">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style11">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style26">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style22">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style12">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style3">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style2">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style7">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style38">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style16">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style39">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style35">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style43">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style13">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style19">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style29">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style33">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style24">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style4">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style41">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style20">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style18">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style37">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style40">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style45">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style10">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style5">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style34">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style31">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style17">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style42">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style8">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style30">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style25">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style21">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style14">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style9">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style1">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style6">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style27">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style32">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style44">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style15">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/mapfiles/ms2/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>EMILIO ALBERTO QUI#ONEZ AVILA                      </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">43 389 X
+  32 Y 34 INDUSTRIAL&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><a href="https://maps.google.com.mx/maps/place?ftid=0x8f56713fb1ee99e1:0x73d4ca59cf0f5adf&amp;q=43+389+INDUSTRIAL&amp;hl=es&amp;authuser=0&amp;cd=1&amp;cad=src:ppiwlink&amp;ei=t99sT9zDNomkiAf5l6i4DA&amp;sig2=m61xz0U0d3VzPxsVCoO9Lw&amp;dtab=5" target="_blank"><img src="https://cbks0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=20.976219,-89.604317&amp;thumb=0"></a>]]></description>
+    <styleUrl>#style23</styleUrl>
+    <Point>
+      <coordinates>-89.604317,20.976219,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>FERNANDO DEL JESUS CORTAZAR CORAL                  </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">41 436C
+  X 30 Y 32 INDUSTRIAL&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><a href="https://maps.google.com.mx/maps/place?ftid=0x8f5671232486f213:0xbdc1ba2ac9859d2e&amp;q=41+436C+INDUSTRIAL&amp;hl=es&amp;authuser=0&amp;cd=1&amp;cad=src:ppiwlink&amp;ei=dOBsT9i1IsSdiAf4wbFQ&amp;sig2=Dx1nqhNGaQA47ZgLfYBCzA&amp;dtab=5" target="_blank"><img src="https://cbks0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=20.977537,-89.596150&amp;thumb=0"></a>]]></description>
+    <styleUrl>#style28</styleUrl>
+    <Point>
+      <coordinates>-89.596153,20.977537,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>EVA MARIA CEH IZA                                  </name>
+    <description><![CDATA[Nueva Mayapan, Mérida, YUC<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">4 222
+  DEPTO 1 X 15 SN JUAN GRANDE&nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><a href="https://maps.google.com.mx/maps/place?ftid=0x8f567120517e3a87:0x396af1bed97c6657&amp;q=4+222+SaN+JUAN+GRANDE&amp;hl=es&amp;authuser=0&amp;cd=1&amp;cad=src:ppiwlink&amp;ei=FOFsT624DImkiAf5l6i4DA&amp;sig2=NFi4WUPpUk0DXhnpP9-1Dg&amp;dtab=5" target="_blank"><img src="https://cbks0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=20.976362,-89.589554&amp;thumb=0"></a>]]></description>
+    <styleUrl>#style36</styleUrl>
+    <Point>
+      <coordinates>-89.589554,20.976362,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Construcciones y Prefabricados Vibosa</name>
+    <description><![CDATA[<div dir="ltr">PERIF OTE 19457 X CARR A CHICHI SUAREZ Y<br></div>]]></description>
+    <styleUrl>#style11</styleUrl>
+    <Point>
+      <coordinates>-89.593704,21.001223,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>CONSTRUCTORA PROYECTOS E INGENIERIA PENINSULAR  S. </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">41 479 X
+  32 Y 34 FRACC BRISAS DEL NORTE&nbsp;</td></tr></tbody></table><a href="https://maps.google.com.mx/maps/place?ftid=0x8f5670d3e79b621f:0x2ff5f71b8a7ab3ae&amp;q=41+479++BRISAS+DEL+NORTE&amp;hl=es&amp;authuser=0&amp;cd=1&amp;cad=src:ppiwlink&amp;ei=fOFsT-vKLabnwAHVzeyvBQ&amp;sig2=e47ClqjE7CadzByXH0iFHA&amp;dtab=5" target="_blank"><img src="https://cbks0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=20.992429,-89.581716&amp;thumb=0"></a>]]></description>
+    <styleUrl>#style26</styleUrl>
+    <Point>
+      <coordinates>-89.581718,20.992430,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VICTOR MANUEL DE ATOCHA SOTO ESCOBAR               </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">31B 247
+  SN NICOLAS NTE&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><a href="https://maps.google.com.mx/maps/place?ftid=0x8f567129379bbd69:0x4bb90a88b7e01524&amp;q=31-B+247,+San+Nicol%C3%A1s,+97147+M%C3%A9rida,+Yucat%C3%A1n&amp;hl=es&amp;authuser=0&amp;cd=1&amp;cad=src:ppiwlink&amp;ei=-eFsT4HxFeSowAHk5OD0Bg&amp;sig2=yhvhtd4tMz5x16hSITCKFA&amp;dtab=5" target="_blank"><img src="https://cbks0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=20.990464,-89.591587&amp;thumb=0"></a>]]></description>
+    <styleUrl>#style22</styleUrl>
+    <Point>
+      <coordinates>-89.591583,20.990463,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>DISTRIBUIDORA NOMOCELL  S.A. DE C.V.               </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">41 452A
+  X 32 Y 34 INDUSTRIAL&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><a href="https://maps.google.com.mx/maps/place?ftid=0x8f56713f1030a08f:0xf5f866d03e20c4d2&amp;q=41+452A++INDUSTRIAL+++++++++++++&amp;hl=es&amp;authuser=0&amp;cd=1&amp;cad=src:ppiwlink&amp;ei=heVsT5GzB4LswAGmhMmaCA&amp;sig2=2-vWct8ZblqfcMA9wtDFOg&amp;dtab=5" target="_blank"><img src="https://cbks0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=20.977842,-89.604672&amp;thumb=0"></a>]]></description>
+    <styleUrl>#style12</styleUrl>
+    <Point>
+      <coordinates>-89.604675,20.977842,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>JOSE ARMANDO GAMBOA NAJERA                         </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">27D 413
+  X 26E Y 26B POLIGONO 108&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style3</styleUrl>
+    <Point>
+      <coordinates>-89.574860,20.992313,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>CONSTRUCTORA ARGON  S.A. DE C.V.                   </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">35 A 389
+  X 24 Y 26 POLIGONO 108&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style2</styleUrl>
+    <Point>
+      <coordinates>-89.575516,20.987286,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>REYES RENATO PECH VECINO                           </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">26 300
+  LOCAL C X 33 Y 37 E ZAPATA OTE&nbsp; &nbsp;</td></tr></tbody></table><a href="https://maps.google.com.mx/maps/place?ftid=0x8f5670cf9d1c00a3:0xba4976c24a7dac12&amp;q=26+300+Emiliano+ZAPATA+Oriente+++&amp;hl=es&amp;authuser=0&amp;cd=1&amp;cad=src:ppiwlink&amp;ei=w-ZsT-rPG82yiQeO8byPDA&amp;sig2=wuCjkFIoNm3Ksj6B7GWb0w&amp;dtab=5" target="_blank"><img src="https://cbks0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=20.986767,-89.575828&amp;thumb=0"></a>]]></description>
+    <styleUrl>#style7</styleUrl>
+    <Point>
+      <coordinates>-89.575829,20.986767,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>WILBERT ARMANDO PE#A SILVEIRA                      </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">29 120 X
+  10 Y 12 SN VICENTE OTE POLIGONO</td></tr></tbody></table>]]></description>
+    <styleUrl>#style38</styleUrl>
+    <Point>
+      <coordinates>-89.564354,20.990862,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>JAVIER CRUZ ZAPATA                                 </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">41 436B
+  X 30 Y 32 INDUSTRIAL&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style16</styleUrl>
+    <Point>
+      <coordinates>-89.595825,20.977530,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>LEFTTY JOSE CAMINO RENDON                          </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">24 360 X
+  31 LOPEZ MATEOS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style39</styleUrl>
+    <Point>
+      <coordinates>-89.596680,20.984667,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>PRESUPUESTOS CONSTRUCCIONES Y MANTENIMIENTOS INTEG </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">41 456 B
+  X 34 Y 36 INDUSTRIAL&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style35</styleUrl>
+    <Point>
+      <coordinates>-89.605522,20.978029,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Construcciones Yuum Beh, S.A. De C.V.</name>
+    <description><![CDATA[<div dir="ltr">31 DIAG 398 X 26 B BRISAS DEL BOSQUE    <br></div>]]></description>
+    <styleUrl>#style43</styleUrl>
+    <Point>
+      <coordinates>-89.575729,20.990997,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>RAFAEL RAMIREZ CERVANTES                           </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">33 X 12
+  210 SAN NICOLAS DEL NORTE&nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><a href="https://maps.google.com.mx/maps/place?ftid=0x8f5670d5021f9275:0xb7d75009714d0e70&amp;q=33++SAN+NICOLAS+DEL+NORTE&amp;hl=es&amp;authuser=0&amp;cd=1&amp;cad=src:ppiwlink&amp;ei=VOhsT76UJomkiAf5l6i4DA&amp;sig2=2_nok7rTpYRdiU_zL1mADQ&amp;dtab=5" target="_blank"><img src="https://cbks0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=20.991714,-89.589382&amp;thumb=0"></a>]]></description>
+    <styleUrl>#style13</styleUrl>
+    <Point>
+      <coordinates>-89.589378,20.991714,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>SOLO NOI  S.A. DE C.V.                             </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">29 X 14
+  261 A SANTA MARIA&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><a href="https://maps.google.com.mx/maps/place?ftid=0x8f5670c99377ed6f:0x97bbeb9a7beb7911&amp;q=29+261++SANTA+MARIA&amp;hl=es&amp;authuser=0&amp;cd=1&amp;cad=src:ppiwlink&amp;ei=zuhsT461Gc6fiQens5SeDA&amp;sig2=x5-xA1sxVNeT9nmBVBdoxQ&amp;dtab=5" target="_blank"><img src="https://cbks0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=20.990783,-89.569949&amp;thumb=0"></a>]]></description>
+    <styleUrl>#style19</styleUrl>
+    <Point>
+      <coordinates>-89.569946,20.990784,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>ESGO ARQUITECTURA Y CONSTRUCCION  S.A. DE C.V.     </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">33 LOTE
+  12 X 24 Y 28 CHICHI SUAREZ&nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style29</styleUrl>
+    <Point>
+      <coordinates>-89.547546,21.000628,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>SOPORTE TECNICO DEL SURESTE  S.A. DE C.V.          </name>
+    <description><![CDATA[<div dir="ltr">37 X 20 Y 20 A 223 PETKANCHE            <br></div>]]></description>
+    <styleUrl>#style33</styleUrl>
+    <Point>
+      <coordinates>-89.592690,20.986845,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>ROSA ESTHER PEREZ CHAN                             </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">22 X 31
+  A Y 31 B 347-B LOPEZ MATEOS&nbsp; &nbsp; &nbsp;</td></tr></tbody></table><a href="https://maps.google.com.mx/maps/place?ftid=0x8f567124d59e5541:0x8e1828073b6a04b7&amp;q=22++347-B+LOPEZ+MATEOS&amp;hl=es&amp;authuser=0&amp;cd=1&amp;cad=src:ppiwlink&amp;ei=ketsT6-0AsOViAe9wNHvDg&amp;sig2=U7OuBNKBkdR_ftJpA6fU-Q&amp;dtab=5" target="_blank"><img src="https://cbks0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=20.982924,-89.596801&amp;thumb=0"></a>]]></description>
+    <styleUrl>#style24</styleUrl>
+    <Point>
+      <coordinates>-89.596802,20.982924,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>GAAP CONSTRUCCIONES  S.A. DE C.V.                  </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">12 X 37
+  Y 39 SN CHICHI SUAREZ&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style4</styleUrl>
+    <Point>
+      <coordinates>-89.554565,20.994579,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>MARIA ESTHER EUAN EUAN                             </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">28B X 31
+  Y 31A 308 POLIGONO 108&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style41</styleUrl>
+    <Point>
+      <coordinates>-89.578377,20.989740,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>ENVASES Y CONEXIONES ULTRA  S.A. DE C.V.           </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">29 X 4 Y
+  6 224 SANTA MARIA CHUBURNA&nbsp; &nbsp; &nbsp;</td></tr></tbody></table><a href="https://maps.google.com.mx/maps/place?ftid=0x8f56774c708f624b:0x5acee2e4b7e08a67&amp;q=29++224+SANTA+MARIA+CHUBURNA++++++&amp;hl=es&amp;authuser=0&amp;cd=1&amp;cad=src:ppiwlink&amp;ei=G-xsT9KwKcywiQer6KSuCw&amp;sig2=rmhcHF5hWoVXs9_XOx-4TA&amp;dtab=5" target="_blank"><img src="https://cbks0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=21.001568,-89.563494&amp;thumb=0"></a>]]></description>
+    <styleUrl>#style20</styleUrl>
+    <Point>
+      <coordinates>-89.563492,21.001568,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>COMERCIALIZADORA ANN JUS DEL SURESTE  S.A. DE C.V. </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">35 X 2 Y
+  4 205 SANTA MARIA&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style18</styleUrl>
+    <Point>
+      <coordinates>-89.584190,20.992805,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>CONSTRUCCIONES CAMINOS Y MAQUINARIA  S.A. DE C.V.  </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">43 X 8 Y
+  10 LOTE 25 LEANDRO VALLE&nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style37</styleUrl>
+    <Point>
+      <coordinates>-89.565331,20.994839,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>ALBERTO ANTONIO CABALLERO LLANES                   </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">35A X 14
+  Y POLIGONO 108 177 REAL DEL SOL</td></tr></tbody></table>]]></description>
+    <styleUrl>#style40</styleUrl>
+    <Point>
+      <coordinates>-89.566216,20.987165,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>MARIA ROSALIA NOH TUN                              </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">24 X 31
+  Y 31A 350 LOPEZ MATEOS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style45</styleUrl>
+    <Point>
+      <coordinates>-89.573662,21.002851,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>AMELIA PERAZA Y LOPEZ </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">35 X 32
+  Y 34 476 FRACC BRISAS DEL NTE&nbsp; &nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style10</styleUrl>
+    <Point>
+      <coordinates>-89.580856,20.994358,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>MARIA EMILIA PALACIOS RAMIREZ                      </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">14 X 39
+  241 SAN JUAN GRANDE&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style5</styleUrl>
+    <Point>
+      <coordinates>-89.586876,20.988419,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>ANDRES RENE ESPEJO MAGA#A                          </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">31 A
+  DIAG X 27 Y 28A 433 BRISAS DEL BOSQ</td></tr></tbody></table><a href="https://maps.google.com.mx/maps/place?ftid=0x8f5670ce6982b63b:0xaded683c06066474&amp;q=31+A+DIAG++433+BRISAS+DEL+BOSQue&amp;hl=es&amp;authuser=0&amp;cd=1&amp;cad=src:ppiwlink&amp;ei=hu5sT9KJOcywiQer6KSuCw&amp;sig2=qYHQ0KtmjJCcZ_GL9Grmww&amp;dtab=5" target="_blank"><img src="https://cbks0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=20.990673,-89.576655&amp;thumb=0"></a>]]></description>
+    <styleUrl>#style34</styleUrl>
+    <Point>
+      <coordinates>-89.576653,20.990673,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>MIGUEL ALEJANDRO CIME CAMEJO                       </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">34 C X
+  33 Y 35 307 EMILIANO ZAPATA OTE&nbsp;&nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style31</styleUrl>
+    <Point>
+      <coordinates>-89.577995,20.986605,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>SERVICIO MULTIMODAL INTEGRADO  S. DE R.L. DE C.V.  </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">22 318 X
+  26 DIAG Y 31 COL BRISAS&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style17</styleUrl>
+    <Point>
+      <coordinates>-89.548134,21.007380,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>MISSAEL DE ATOCHA RIVERO GONZALEZ                  </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">27 D
+  DIAG 363 X 26B Y 16 POLIGONO&nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table><a href="https://maps.google.com.mx/maps/place?ftid=0x8f5670cea68c3063:0xf09ee0b7c0a60628&amp;q=27+D+DIAG+363+POLIGONO++++++++&amp;hl=es&amp;authuser=0&amp;cd=1&amp;cad=src:ppiwlink&amp;ei=3O9sT-CnGMquiQffuOzrCQ&amp;sig2=GkgJIGm7xU9vImlilq8dfA&amp;dtab=5" target="_blank"><img src="https://cbks0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=20.991781,-89.574360&amp;thumb=0"></a>]]></description>
+    <styleUrl>#style42</styleUrl>
+    <Point>
+      <coordinates>-89.574364,20.991781,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>MAURO ANTONIO BALAN CAN                            </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">31 264 X
+  22 Y 24 ADOLFO LOPEZ MATEOS&nbsp; &nbsp;&nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style8</styleUrl>
+    <Point>
+      <coordinates>-89.598122,20.989410,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VNM CONSTRUCCIONES SA DE CV                        </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">46 565 X
+  33 Y 35 NUEVO YUCATAN&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style30</styleUrl>
+    <Point>
+      <coordinates>-89.579796,20.998083,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>VINAMO  S.A. DE C.V.                               </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">46 565 X
+  33 Y 35 NVO YUCATAN&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style25</styleUrl>
+    <Point>
+      <coordinates>-89.579964,20.998203,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>SANDY ROMAN CAUICH NABTE                           </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">28 273 X
+  27 DIAG Y 27 POLIG 108 ITZIMNA&nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style21</styleUrl>
+    <Point>
+      <coordinates>-89.575127,20.992815,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>CONTROLADORA DE INVENTARIOS SA DE CV               </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">44 200A
+  X 33 Y 35 INT SUBANGLA1 POLIGONO</td></tr></tbody></table>]]></description>
+    <styleUrl>#style14</styleUrl>
+    <Point>
+      <coordinates>-89.580887,20.986845,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>FERNANDO ENRIQUE ROSADO CAAMAL                     </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">48 225 X
+  23 Y 23 A BRISAS DEL BOSQUE&nbsp; &nbsp;&nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style9</styleUrl>
+    <Point>
+      <coordinates>-89.578056,20.993555,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>26 Diagonal</name>
+    <description><![CDATA[Mérida, YUC<br>]]></description>
+    <styleUrl>#style1</styleUrl>
+    <Point>
+      <coordinates>-89.549759,21.000971,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>SARA ISABEL SOLIS PERAZA                           </name>
+    <description><![CDATA[Mérida, YUC<br>]]></description>
+    <styleUrl>#style6</styleUrl>
+    <Point>
+      <coordinates>-89.549759,21.000971,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>ADDY LUZ CAMPOS CEBALLOS                           </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">35 438A
+  X 24 FRACC BRISAS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style27</styleUrl>
+    <Point>
+      <coordinates>-89.594383,20.986164,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>MARIO EDGARDO ESQUILIANO PENICHE                   </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">CERRADA
+  23B X 16 98 F FOVISTE CHOLUL&nbsp; &nbsp;&nbsp;</td></tr></tbody></table>]]></description>
+    <styleUrl>#style32</styleUrl>
+    <Point>
+      <coordinates>-89.553513,21.039967,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Construcciones Proyectos Y Caminos De Yucatan Sa De Cv</name>
+    <description><![CDATA[<div dir="ltr">37A 429 INT 1 X 36A Y 38 COL IND LAS ARB</div>]]></description>
+    <styleUrl>#style44</styleUrl>
+    <Point>
+      <coordinates>-89.595711,20.986691,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>COLEGIO EDUCATIVO BRISAS  A.C.                     </name>
+    <description><![CDATA[<table border="0" cellpadding="0" cellspacing="0" width="365" style="border-collapse:collapse;width:274pt"><tbody><tr>
+  <td height="20" width="365" style="width:274pt">16 103A
+  X 15 Y 17 FRACC BRISAS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td></tr></tbody></table><a href="http://maps.google.com.mx/maps/place?ftid=0x8f5670d1758cff81:0xdb192550510d17de&amp;q=20.990411,-89.580717&amp;hl=es&amp;authuser=0&amp;cd=1&amp;cad=src:ppiwlink&amp;ei=g_hsT8K_CcGXiQfA_ISmDw&amp;sig2=RynCArxKCvNWGixl_xLW7A&amp;dtab=5" target="_blank"><img src="http://cbk0.google.com/cbk?output=thumbnail&amp;w=90&amp;h=68&amp;ll=20.990610,-89.580459&amp;thumb=0"></a>]]></description>
+    <styleUrl>#style15</styleUrl>
+    <Point>
+      <coordinates>-89.580460,20.990610,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>

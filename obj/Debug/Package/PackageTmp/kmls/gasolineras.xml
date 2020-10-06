@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gasolineras>
+	<gasolinera id="G2">
+		<longitud>1214</longitud>
+		<latitud>1215</latitud>
+		<litros_magna>50000</litros_magna>
+		<litros_disel>50000</litros_disel>
+		<magna_restante>50000</magna_restante>
+		<disel_restante>50000</disel_restante>
+	</gasolinera>
+</gasolineras>

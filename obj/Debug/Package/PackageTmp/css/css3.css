@@ -1,0 +1,15 @@
+.shadow {
+	text-shadow: 1px 1px 1px #666
+}
+.rounded {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px
+}
+.rounded_top_right {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; border-top-right-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px
+}
+.box_shadow {
+	-webkit-box-shadow: 2px 2px 3px #ccc; -moz-box-shadow: 2px 2px 3px #ccc; box-shadow: 2px 2px 3px #ccc
+}
+.rotate {
+	-webkit-transform: rotate(-15deg); -moz-transform: rotate(-15deg)
+}

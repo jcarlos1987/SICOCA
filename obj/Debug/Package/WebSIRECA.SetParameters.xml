@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/WebSIRECA_deploy" />
+  <setParameter name="ConnectionString-Web.config Connection String" value="Provider=SQLOLEDB;Data Source=172.19.51.225;Password=fiscamovil;User ID=fiscamovil;Initial Catalog=sireca" />
+  <setParameter name="ConnectionStringFiscamovil-Web.config Connection String" value="Provider=SQLOLEDB;Data Source=172.19.51.225;Password=fiscamovil;User ID=fiscamovil;Initial Catalog=fiscamovil" />
+  <setParameter name="ConnectionStringMaster-Web.config Connection String" value="Provider=SQLOLEDB;Data Source=172.19.51.225;Persist Security Info=True;Password=fiscamovil;User ID=fiscamovil" />
+  <setParameter name="ConnectionStringMasterSql-Web.config Connection String" value="Data Source=172.19.51.225;User ID=fiscamovil;Password=fiscamovil" />
+  <setParameter name="sirecacobrosConnectionString-Web.config Connection String" value="Data Source=172.19.51.225;Initial Catalog=sirecacobros;User ID=fiscamovil;Password=fiscamovil" />
+</parameters>

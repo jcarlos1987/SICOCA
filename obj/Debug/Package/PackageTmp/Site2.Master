@@ -1,0 +1,81 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site2.master.vb" Inherits="WebSIRECA.Site2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><%
+               If Session.Item("SIRECAuser") Is Nothing Then%>Inicio de Sesión
+               <%  Else
+                       If Session.Item("SIRECA2chmod1") is Nothing Then%>
+               Bienvenido(a) <%: Session.Item("SIRECAnombre")%>
+               <% Else %>
+               Inicio de Sesión
+               <%  End If
+               End If
+    %></title>       
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>  
+<style type="text/css">
+body {
+	font-family: "Calibri";
+}
+</style>
+<script language="javascript" type="text/javascript">
+    function cerrar() {
+        //var ventana = window.self;
+        //ventana.opener = window.self;
+        //ventana.close();
+        //var ventana = window.parent.self;
+        //ventana.opener = window.parent.self;
+        //ventana.close();
+    }
+</script>
+</head>
+<body alink="#333333" link="#000000" vlink="#333333">
+    <form id="form1" runat="server">
+    <div>
+        <asp:Panel ID="Panel1" runat="server" Height="80px" 
+            BackImageUrl="~/imagenes/fondo 2.png">
+            
+            <asp:ImageButton ID="Logo" runat="server" Height="80px" ImageAlign="Right" 
+                ImageUrl="~/imagenes/sireca.png" Width="81px" PostBackUrl="~/cobros/login2.aspx" 
+                ToolTip="Ir a SIRECA" />
+<asp:ImageButton ID="ImageButton1" runat="server" ImageAlign="Right" 
+                ImageUrl="~/imagenes/logo_horizontal_verde.png" />
+            <asp:HyperLink ID="HyperLink1" runat="server" 
+                ForeColor="White" Font-Underline="True">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:HyperLink>
+            <div>
+                &nbsp;&nbsp;<asp:ImageButton ID="ImageButton2" runat="server" Height="38px" 
+                    ImageAlign="Middle" ImageUrl="~/imagenes/blue_home.png" Width="38px" 
+                    ToolTip="Ir a la pagina de inicio" PostBackUrl="~/cobros/Default.aspx" />
+                    <%  If Session.Item("SIRECA2chmod2") Is Nothing Then
+                        ElseIf Session.Item("SIRECAchmod7").ToString.Equals("x") And (Session.Item("SIRECAsubdel").ToString <> "00") Then
+                            %>
+                             <asp:ImageButton ID="ImageButton4" runat="server" ImageAlign="Middle" 
+                    ImageUrl="~/imagenes/lista_casos.png" 
+                    PostBackUrl="~/cobros/supervisor.aspx" />
+                      <%
+                        End If
+                        %>
+
+                <asp:ImageButton ID="ImageButton3" runat="server" 
+                    ImageAlign="Middle" ImageUrl="~/imagenes/user_locked.png" Height="39px" 
+                    ToolTip="Iniciar Sesion" Width="39px" />
+                <asp:Label ID="Label1" runat="server" Font-Bold="False" Font-Italic="True" 
+                    Font-Overline="False" Font-Size="X-Large" Font-Strikeout="False" 
+                    Font-Underline="False" ForeColor="#003300" Text="Segundo Ciclo"></asp:Label>
+            </div>            
+        </asp:Panel>
+        
+        <center>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </center>
+        
+    </div>
+    </form>
+</body>
+
+</html>

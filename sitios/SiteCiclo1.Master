@@ -1,0 +1,463 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="SiteCiclo1.master.vb" Inherits="WebSIRECA.SiteCiclo1" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<link id="Link1" runat ="server" rel="Shortcut Icon" href="~/sireca.ico" type="image/x-icon" />
+<link id="Link2" runat ="server" rel="Icon" href="~/sireca.ico" type="image/ico" />
+    <link href="../css/sireca.css" rel="stylesheet" type="text/css" />
+    <link href="../css/ciclo1.css" rel="stylesheet" type="text/css" />
+    <script src="../js/sireca.js" type="text/javascript"></script>
+    <link href="../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!--link href="../bootstrap/css/docs.css" rel="stylesheet" type="text/css" /-->
+    <script src="../bootstrap/js/jquery.js" language="javascript" type="text/javascript"></script>
+    <script src="../bootstrap/js/jquery-2.0.2.min.js" language="javascript" type="text/javascript"></script>
+    <%--<script src="../bootstrap/js/jquery-1.10.1.min.js" type="text/javascript"></script>--%>
+    <script src="../bootstrap/js/bootstrap.min.js" language="javascript" type="text/javascript"></script>
+    <script src="../bootstrap/js/bootstrap-tooltip.js" language="javascript" type="text/javascript"></script>
+    <script src="../bootstrap/js/bootstrap-dropdown.js" language="javascript" type="text/javascript"></script>
+    <title>SIRECA CICLO 1</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type ="text/javascript" >
+        $(document).ready(
+            function () {
+                $('.tooltip1').tooltip();
+                $('.dropdown-toggle').dropdown();
+            }
+        );
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <asp:ScriptManager ID="ScriptManagerMaster" EnableScriptGlobalization="true" EnableScriptLocalization="true" runat="server"></asp:ScriptManager>
+            <table style="width:100%;" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td colspan="3">
+                            <table style="width:100%;" border="0" cellpadding="0" cellspacing="0" >
+                                <tr bgcolor="#FBFAF8">
+                                    <td align="left">
+                                        <asp:ImageButton ID="ImageButton2" runat="server" 
+                                            ImageUrl="~/imagenes/sitios/imss_principal.jpg" ToolTip="IMSS" 
+                                            ImageAlign="AbsMiddle" />
+                                    </td>
+                                    <td style="vertical-align: bottom">
+
+                                        &nbsp;</td>
+                                    <td align="right">
+                                            <% If Session.Item("SIRECAuser") Is Nothing Then %>
+                                            <% Else %>
+                                            <asp:ImageButton ID="IBFotoUsuario" runat="server" 
+                                            ImageUrl="~/imagenes/usuarios/avatar/usuarioSireca.jpg" ImageAlign="AbsMiddle" 
+                                                Height="80px" Width="80px" />
+                                            <% End If %>
+                                        <asp:ImageButton ID="ImageButton1" runat="server" 
+                                            ImageUrl="~/imagenes/sitios/sireca.png" PostBackUrl="~/principal/Default.aspx" 
+                                            ToolTip="SIRECA" ImageAlign="AbsMiddle" />
+                                    </td>
+                                </tr>
+                            </table>
+                    </td>
+                </tr>
+            </table>
+<div class="navbar">
+  <div class="navbar-inverse">
+    <div class="container btn-success">
+      <%--<div class="nav-collapse collapse navbar-responsive-collapse">--%>
+      <ul class="nav pull-left">
+        <li>
+        <% If Session.Item("SIRECAuser") Is Nothing Then %><% Else %>&nbsp;Bienvenido: <%: Session.Item("SIRECAnombre").ToString() %><% End If %>
+         <asp:UpdatePanel ID="UPHora" runat="server" UpdateMode="Conditional">
+             <ContentTemplate>
+             <asp:Timer ID="Timer1" runat="server" Interval="120000"></asp:Timer>
+                 &nbsp;<%:Now.ToLongDateString.ToString %>, <%: Now.ToShortTimeString%>
+             </ContentTemplate>
+             <Triggers>
+                 <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
+             </Triggers>
+         </asp:UpdatePanel>
+        </li>
+      </ul>
+      <ul class="nav pull-right">             
+            <%-- <li class="divider-vertical"></li>--%>
+            <li>
+<asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/mensajesobservacioncomentarios.aspx?tipo=1"> <span class="tooltip1" data-toggle="tooltip" data-placement="bottom" title ="LEER MENSAJES NUEVOS (MENORES A 6 DÍAS DE SU PUBLICACIÓN)">
+<asp:FormView ID="FormView1" runat="server" DataSourceID="SqlDataSourceMensajes">
+                <ItemTemplate >
+                    <i class="icon-white icon-envelope"></i>
+                    <asp:Label ID="Label1" runat="server" Text='<%# "" & Eval("MENSAJES") & "" %>' ForeColor="White"></asp:Label></ItemTemplate></asp:FormView></span></asp:LinkButton>
+            <asp:SqlDataSource ID="SqlDataSourceMensajes" runat="server" 
+                                                ConnectionString="<%$ ConnectionStrings:ConnectionStringMaster %>" 
+                                                ProviderName="<%$ ConnectionStrings:ConnectionStringMaster.ProviderName %>" SelectCommand="DECLARE @USER_TYPE as VARCHAR(4)
+DECLARE @INSPECTOR as VARCHAR(6)
+DECLARE @SUBDEL as VARCHAR(6)
+SET @USER_TYPE=?
+SET @INSPECTOR=?
+SET @SUBDEL=?
+
+if @USER_TYPE='0'
+begin 
+	SET @INSPECTOR='%'
+end
+if @SUBDEL='00'
+begin 
+	SET @SUBDEL='%'
+end
+
+SELECT count(*) as MENSAJES
+FROM [sirecaObservaciones].[dbo].[observacionPatronal] as ob 
+left join
+[sirecaObservaciones].[dbo].[comentarioObservacion] as cob
+on ob.id=cob.[idObservacion]
+left join
+[sirecacobros].[dbo].[CO_CPATRONAL]
+on [CP_REGPAT]=idRegpat
+where (datediff(day,ob.[fechaSystema],getdate())&lt;6 or datediff(day,cob.[fechaSystema],getdate())&lt;6)
+and [CP_INSPEC] like @INSPECTOR
+and CP_SUBDEL like @SUBDEL
+">
+                                                <SelectParameters>
+                                                    <asp:SessionParameter DefaultValue="1" Name="?" 
+                                                        SessionField="SIRECAuser_type" />
+                                                    <asp:SessionParameter DefaultValue="99999" Name="?" SessionField="SIRECAid" />
+                                                    <asp:SessionParameter DefaultValue="00" Name="?" SessionField="SIRECAsubdel" />
+                                                </SelectParameters>
+                                            </asp:SqlDataSource>
+            </li>
+             <li class="dropdown">
+                <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><i class="icon-eye-open icon-white"></i></a>
+                <ul class="dropdown-menu">
+                          <li class="dropdown-submenu">
+                                <a href="#"><i class="icon-barcode"></i>&nbsp;CODIGO DE BARRA</a>
+                                <ul class="dropdown-menu">
+                                    <li><asp:HyperLink ID="HyperLink72" runat="server" 
+                                            NavigateUrl="~/areaemision/regcodebar.aspx">REGISTRAR ACCIÓN</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink74" runat="server" 
+                                            NavigateUrl="~/areaemision/busquedacodebar.aspx">BUSCAR</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink76" runat="server" 
+                                            NavigateUrl="~/areaemision/informediariocobranzaoportuna.aspx">INFORME DIARIO DE LA COBRANZA OPORTUNA</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink78" runat="server" 
+                                            NavigateUrl="~/areaemision/reportecodebarnotificados.aspx">INFORME DE PRODUCTIVIDAD NOTIFICADOS</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink75" runat="server" 
+                                            NavigateUrl="~/areaemision/codebarrecorrido.aspx">REPORTE SEGUIMIENTO DE DOCUMENTOS</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink73" runat="server" 
+                                            NavigateUrl="~/areaemision/codebarcontrol.aspx">PENDIENTES</asp:HyperLink></li>
+                                </ul>
+                          </li>
+                          <li><asp:HyperLink ID="HyperLink77" runat="server" 
+                                  NavigateUrl="~/areaemision/informediariocobranza.aspx"><i class=" icon-share"></i>&nbsp;INFORME DE COBRO TOTAL</asp:HyperLink></li>
+                          <li class="dropdown-submenu">
+                                <a href="#"><i class="icon-briefcase"></i>&nbsp;RESUMEN DE PAGO</a>
+                                <ul class="dropdown-menu">
+                                    <li><asp:HyperLink ID="HyperLink70" runat="server" NavigateUrl="~/cruceslgpprocesarrale/depuradosporpago.aspx">E.C.O. DEPURADOS POR PAGO</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/cruceslgpprocesarrale/Default.aspx">E.C.O.</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/areaemision/clasificaciondepagos.aspx">E.M.A.</asp:HyperLink></li>
+                                </ul>
+                          </li>
+                         <li class="dropdown-submenu">
+                         <asp:HyperLink ID="HyperLink50" runat="server" NavigateUrl="~/pag_cobros/generalresumen.aspx?tipo=1"><i class="icon-check"></i>&nbsp;EFECTIVIDAD DEL PERSONAL</asp:HyperLink>
+<%  If Not Session.Item("SIRECAnombre") Is Nothing Then %>
+   <% If Session.Item("SIRECAind_desempenio").ToString.Equals("1") Then%>
+                             <ul class="dropdown-menu">
+                                    <li>
+                                    <asp:HyperLink ID="HyperLink54" runat="server" NavigateUrl="~/areaemision/indicadoresdedesempenio.aspx?tipo=1"><i class="icon-check"></i>&nbsp;INDICADORES DE DESEMPEÑO</asp:HyperLink>
+                                    </li> 
+                             </ul> 
+   <% End If %>
+<% End If %>
+                         </li>
+                         <li class="dropdown-submenu">
+                         <a href="#"><i class=" icon-share"></i>&nbsp;ASIGNACION</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                <asp:HyperLink ID="HyperLink21" runat="server">NOTIFICACIÓN</asp:HyperLink>
+                                    <ul class="dropdown-menu">
+                                        <li><asp:HyperLink ID="HyperLink25" runat="server" NavigateUrl="~/pag_asps/supervisor.aspx">LOCAL</asp:HyperLink></li>
+                                        <li><asp:HyperLink ID="HyperLink26" runat="server" NavigateUrl="~/pag_asps/addForaneos.aspx">FORANEA</asp:HyperLink></li>
+                                        <li><asp:HyperLink ID="HyperLink24" runat="server" NavigateUrl="~/casosespeciales/signacion.aspx?tipo=1">CASOS ESPECIALES</asp:HyperLink></li>
+                                        <li><asp:HyperLink ID="HyperLink27" runat="server" NavigateUrl="~/areaemision/asignacionecomanual.aspx">CARGAR ASIGNACION ECO</asp:HyperLink></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                <asp:HyperLink ID="HyperLink22" runat="server">P.A.E.</asp:HyperLink>
+                                    <ul class="dropdown-menu">
+                                        <li><asp:HyperLink ID="HyperLink28" runat="server" NavigateUrl="~/pag_cobros/paeemisioncobros.aspx?area=EMISION&amp;tipo=1">P.A.E.</asp:HyperLink></li>
+                                        <li><asp:HyperLink ID="HyperLink29" runat="server" NavigateUrl="~/pag_cobros/paeemisioncobrosinfo.aspx?area=EMISION&amp;tipo=1">P.A.E. INFO. POR MUNICIPIO/SECTOR</asp:HyperLink></li>
+                                        <li><asp:HyperLink ID="HyperLink30" runat="server" NavigateUrl="~/casosespeciales/signacion.aspx?tipo=1">CASOS ESPECIALES</asp:HyperLink></li>
+                                    </ul>
+                                </li>
+                                <%--<li><asp:HyperLink ID="HLSivepa1" runat="server" NavigateUrl="~/sivepas/cargadeasignacion.aspx">SIVEPA MANUAL</asp:HyperLink></li>--%>
+                                <li><asp:HyperLink ID="HLSivepa2" runat="server" NavigateUrl="~/sivepas/asignacionautomatica.aspx">SIVEPA AUTOMATICO</asp:HyperLink></li>
+                            </ul>
+                         </li>
+                         <li class="dropdown-submenu">
+                         <a href="#"><i class="icon-info-sign"></i>&nbsp;SECCION INFORMATIVA</a>
+                                <ul class="dropdown-menu">
+                                    <li><asp:HyperLink ID="HyperLink66" runat="server" NavigateUrl="~/consultarpago.aspx?tipo=1">CONSULTAR PAGO EN LGP</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/areaemision/analisis01.aspx">ANALISIS INC. 01</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/pag_emision/pendientes.aspx?tipo=1">DIAS MAYOR A 19</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/porIncPae/Default.aspx?c=1&amp;tipo=1">INCIDENCIA 32 Y 09</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/noLocalizados/Default.aspx">NO LOCALIZADOS</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/rale/Default.aspx?tipo=1">R.A.L.E. POR INCIDENCIA</asp:HyperLink></li>
+                                    <%--<li><asp:HyperLink ID="HyperLink23" runat="server" 
+                                            NavigateUrl="~/ccmorsitcob/default.aspx">R.A.L.E. POR SITUACIÓN DE COBRO</asp:HyperLink></li>--%>
+                                    <li><asp:HyperLink ID="HyperLink51" runat="server" NavigateUrl="~/areaemision/analisis09ec.aspx">NOTIFICACIÓN TRANSVERSAL ENTRE OFICINAS</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/sivepas/resumendiligencias.aspx">REPORTE DE SIVEPA</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/rale/ralevsrale.aspx?tipo=1">R.A.L.E. VS .R.A.L.E.</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink68" runat="server" NavigateUrl="~/areaemision/reportenotificacion/entregaretrasonotificado.aspx">NOTIFICACIÓN E.C.O.</asp:HyperLink></li>
+<%  If Not Session.Item("SIRECAnombre") Is Nothing Then %>
+   <% If Session.Item("SIRECAsubdel").ToString.Equals("00") Then%>
+                                    <li><asp:HyperLink ID="HyperLink12" runat="server" 
+                                            NavigateUrl="~/areaemision/reportenotificacion/desfaceentregadoc.aspx">CONTROL DE ENTREGA DE EMISIONES</asp:HyperLink></li>
+   <% End If %>
+<% End If %>
+                                    <li><asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/sivepas/reportenotificacion2.aspx">NOTIFICACIÓN SIVEPA</asp:HyperLink></li>
+                                    <li class="dropdown-submenu">
+                                    <asp:HyperLink ID="HyperLink14" runat="server">INGRESOS FINANCIEROS</asp:HyperLink>
+                                        <ul class="dropdown-menu">
+                                            <li><asp:HyperLink ID="HyperLink45" runat="server" NavigateUrl="~/lgp/Default3.aspx">L.G.P. MENSUAL 2013</asp:HyperLink></li>
+                                            <li><asp:HyperLink ID="HyperLink55" runat="server" NavigateUrl="~/lgp/Default2.aspx">L.G.P. MENSUAL 2014</asp:HyperLink></li>
+                                            <li><asp:HyperLink ID="HyperLink17" runat="server" NavigateUrl="~/lgp/Default.aspx?tipo=g">L.G.P. ANUAL 2013</asp:HyperLink></li>
+                                            <li><asp:HyperLink ID="HyperLink18" runat="server" NavigateUrl="~/procesar/Default.aspx">PROCESAR</asp:HyperLink></li>
+                                            <li><asp:HyperLink ID="HyperLink53" runat="server" NavigateUrl="~/procesar/metasporporcentaje.aspx">PROCESAR METAS CON CORTES</asp:HyperLink></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                    <asp:HyperLink ID="HyperLink15" runat="server">FACTURA VS INGRESOS 10,13,17 OBSERVADO</asp:HyperLink>
+                                        <ul class="dropdown-menu">
+                                        <li><asp:HyperLink ID="HyperLink19" runat="server" NavigateUrl="~/lgp/facturasemision.aspx">PREVIO</asp:HyperLink></li>
+                                        <li><asp:HyperLink ID="HyperLink20" runat="server" NavigateUrl="~/lgp/facturasemisionoficial.aspx">OFICIAL</asp:HyperLink></li>
+                                        </ul>
+                                    </li>
+                                    <li><asp:HyperLink ID="HyperLink16" runat="server" NavigateUrl="~/lgp/desarrollodelacobranza.aspx?tipo=1">DESARROLLO DE LA COBRANZA DE LA EMISION MENSUAL ANTICIPADA</asp:HyperLink></li>
+                                </ul>
+                         </li>
+                         
+                         <li class="dropdown-submenu">
+                         <a href="#"><i class="icon-wrench"></i>&nbsp;MANTENIMIENTO</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                <asp:HyperLink ID="HyperLink31" runat="server">CARGAR</asp:HyperLink>
+                                    <ul class="dropdown-menu">
+                                    <li><asp:HyperLink ID="HyperLink35" runat="server" NavigateUrl="~/rale/cargarRale2.aspx">R.A.L.E.</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink36" runat="server" NavigateUrl="~/procesar/cargarProcesar.aspx">PROCESAR</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink37" runat="server" NavigateUrl="~/lgp/cargarLGP.aspx">L.G.P.</asp:HyperLink></li>
+<%  If Not Session.Item("SIRECAnombre") Is Nothing Then %>
+   <% If Session.Item("SIRECAcredencial").ToString.Equals("admin") Then%>
+        <li><asp:HyperLink ID="HyperLink67" runat="server" NavigateUrl="~/sipare/default.aspx">SIPARE</asp:HyperLink></li>
+   <% End If %>
+<% End If %>
+                                    
+                                    <li><asp:HyperLink ID="HyperLink38" runat="server" NavigateUrl="~/sivepas/default.aspx">FACTURAS DE SIVEPAS</asp:HyperLink></li>
+<%  If Not Session.Item("SIRECAnombre") Is Nothing Then %>
+   <% If Session.Item("SIRECAcredencial").ToString.Equals("admin") Then%>
+        <li><asp:HyperLink ID="HyperLink52" runat="server" NavigateUrl="~/areaemision/cargareco2.aspx">FACTURAS DE ECOS</asp:HyperLink></li>   
+      <% End If %>
+<% End If %>
+
+                                    <li><asp:HyperLink ID="HyperLink59" runat="server" NavigateUrl="~/pag_otras_facturas/default.aspx">OTRAS FACTURAS</asp:HyperLink></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                <asp:HyperLink ID="HyperLink32" runat="server">DESCARGAR</asp:HyperLink>
+                                    <ul class="dropdown-menu">
+                                    <li><asp:HyperLink ID="HyperLink39" runat="server" NavigateUrl="~/rale/descargarRale.aspx">R.A.L.E.</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink40" runat="server" NavigateUrl="~/procesar/descargarProcesar.aspx">PROCESAR</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink41" runat="server" NavigateUrl="~/lgp/descargarLGP.aspx">L.G.P.</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink63" runat="server" 
+                                            NavigateUrl="~/pag_descargas/default.aspx">OTRAS DESCARGAS</asp:HyperLink></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                <asp:HyperLink ID="HyperLink33" runat="server">CASOS ESPECIALES</asp:HyperLink>
+                                    <ul class="dropdown-menu">
+                                    <li><asp:HyperLink ID="HyperLink42" runat="server" NavigateUrl="~/casosespeciales/registraralias.aspx?tipo=1">REGISTRAR ALIAS</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink43" runat="server" NavigateUrl="~/casosespeciales/Default.aspx?tipo=1">AGREGAR PATRON</asp:HyperLink></li>
+                                    </ul>
+                                </li>
+                                <li><asp:HyperLink ID="HyperLink34" runat="server" NavigateUrl="~/pag_asps/ProVsEco.aspx">DEPURACIÓN</asp:HyperLink></li>
+                            </ul>
+                         </li>
+                         <li class="divider"></li>
+                         <li class="dropdown-submenu"><asp:HyperLink ID="HyperLink46" runat="server" ><i class="icon-repeat"></i>&nbsp;PATRONES SIN PAGO DE LA EMISION</asp:HyperLink>
+                             <ul class="dropdown-menu">
+                                 <li><asp:HyperLink ID="HyperLink48" runat="server" NavigateUrl="~/sinpago/default.aspx"><i class="icon-repeat"></i>&nbsp;CREAR BASE</asp:HyperLink></li>
+                                 <li><asp:HyperLink ID="HyperLink47" runat="server" NavigateUrl="~/sinpago/documentos.aspx"><i class="icon-download-alt"></i>&nbsp;DESCARGAR</asp:HyperLink></li>
+                                 <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/sinpago/actualizar.aspx"><i class="icon-refresh"></i>&nbsp;CAPTURAR DILIGENCIAS</asp:HyperLink></li>
+                                 <li><asp:HyperLink ID="HyperLink49" runat="server" NavigateUrl="~/sinpago/reporte.aspx"><i class="icon-asterisk"></i>&nbsp;REPORTE</asp:HyperLink></li>
+                             </ul>
+                         </li>
+                         <li class="dropdown-submenu"><asp:HyperLink ID="HyperLink56" runat="server" ><i class="icon-check"></i>&nbsp;CONTROL DE CAPTURA</asp:HyperLink>
+                             <ul class="dropdown-menu">
+<%  If Not Session.Item("SIRECAnombre") Is Nothing Then %>
+   <% If Session.Item("SIRECAemision_p1").ToString.Equals("1") Then%>
+                                 <li><asp:HyperLink ID="HyperLink57" runat="server" NavigateUrl="~/informesPDF/emision/Default.aspx"><i class="icon-check"></i>&nbsp;VALIDAR</asp:HyperLink></li>
+   <% End If %>
+<% End If %>
+<%  If Not Session.Item("SIRECAnombre") Is Nothing Then %>
+   <% If Session.Item("SIRECAreg_tipo").ToString.Equals("SUP3") and Session.Item("SIRECAreg_codebar").ToString.Equals("EMISION") Then%>
+                                <li><asp:HyperLink ID="HyperLink80" runat="server" NavigateUrl="~/informesPDF/emision/capturaincsiscop.aspx"><i class="icon-check"></i>&nbsp;CEDULA REGISTRO A SISCOB</asp:HyperLink></li>
+   <% End If %>
+<% End If %>
+                                 <li><asp:HyperLink ID="HyperLink71" runat="server" 
+                                         NavigateUrl="~/informesPDF/emision/controlcedulas.aspx"><i class="icon-check"></i>&nbsp;CONTROL DE CEDULAS</asp:HyperLink></li>
+                                <li><asp:HyperLink ID="HyperLink23" runat="server" 
+                                         NavigateUrl="~/areaemision/cedulaspordia.aspx"><i class="icon-check"></i>&nbsp;CEDULAS POR DÍA</asp:HyperLink></li>
+                                 <li><asp:HyperLink ID="HyperLink58" runat="server" 
+                                         NavigateUrl="~/informesPDF/emision/buscadorvalidados.aspx"><i class="icon-check"></i>&nbsp;BUSCAR</asp:HyperLink></li>
+                             </ul>
+                         </li>
+<%--<%  If Not Session.Item("SIRECAnombre") Is Nothing Then %>
+   <% If Session.Item("SIRECAemision_p1").ToString.Equals("x") Then%>--%>
+                         <li class="dropdown-submenu"><asp:HyperLink ID="HyperLink60" runat="server" ><i class="icon-check"></i>&nbsp;CIFRA CONTROL</asp:HyperLink>
+                             <ul class="dropdown-menu">
+                                 <li><asp:HyperLink ID="HyperLink61" runat="server" NavigateUrl="~/pag_otras_facturas/facturascifracontrolagrupadas.aspx"><i class="icon-check"></i>&nbsp;FACTURAS</asp:HyperLink></li>
+                             </ul>
+                         </li>
+<%--   <% End If %>
+<% End If %>--%>
+<%  If Not Session.Item("SIRECAnombre") Is Nothing Then %>
+   <% If Session.Item("SIRECAcontprint").ToString.Equals("1") Then%>
+                             
+                                    <li class="dropdown-submenu">
+                                    <asp:HyperLink ID="HyperLink62" runat="server" ><i class="icon-check"></i>&nbsp;CONTROL DE IMPRESIONES</asp:HyperLink>
+                                    <ul class="dropdown-menu">
+                                        <li><asp:HyperLink ID="HyperLink69" runat="server" 
+                                                NavigateUrl="~/informesPDF/canceladasimpresas.aspx"><i class="icon-check"></i>&nbsp;IMPRESIONES REALIZADAS/CANCELADAS</asp:HyperLink></li>
+                                        <li><asp:HyperLink ID="HyperLink65" runat="server" 
+                                                NavigateUrl="~/informesPDF/controlimpresiones.aspx"><i class="icon-check"></i>&nbsp;IMPRESIONES REALIZADAS</asp:HyperLink></li>
+                                        <li><asp:HyperLink ID="HyperLink64" runat="server" 
+                                                NavigateUrl="~/informesPDF/emision/documentosgenerados.aspx"><i class="icon-check"></i>&nbsp;VALIDAR CODIGO DE IMPRESIONES</asp:HyperLink></li>
+                                    </ul>
+                                    </li> 
+                             
+   <% End If %>
+<% End If %>
+
+                         <li class="divider"></li>
+<li>
+<a href ="http://11.1.33.226/fiscal/juicio.php" target ="_blank" >
+<asp:Image runat="server" Height="32px" ImageUrl="~/imagenes/sijur.png" Width="70px" ToolTip="Ir al sitio de SIJUR" ImageAlign="AbsMiddle" />&nbsp;Ir al Sitio de SIJUR
+</a>
+</li>
+                         <li class="divider"></li>
+                         <li><asp:HyperLink ID="HyperLink44" runat="server" NavigateUrl="~/principal/Ciclo1.aspx"><i class="icon-home"></i>&nbsp;PAGINA PRINCIPAL</asp:HyperLink></li>
+                </ul>                
+            </li>
+            <li>
+                <asp:LinkButton ID="IBBuscador" runat="server" CssClass="btn btn-success dropdown-toggle"><span class="tooltip1" data-toggle="tooltip" data-placement="bottom" title ="BUSCAR POR REGISTRO PATRONAL Ó RAZON SOCIAL"><i class="icon-search icon-white"></i></span></asp:LinkButton>
+            </li>
+            <li>
+                <asp:LinkButton ID="IBInicion" runat="server" CssClass="btn btn-success dropdown-toggle"><span class="tooltip1" data-toggle="tooltip" data-placement="bottom" title ="MENU DE CICLOS"><i class="icon-th icon-white"></i></span></asp:LinkButton> 
+            </li>
+            <li>
+            <% If Session.Item("SIRECAuser") Is Nothing Then %>
+                <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/Login.aspx" CssClass="btn btn-success"><i class="icon-user icon-white"></i></asp:LinkButton>
+            <% Else %>
+                <asp:LinkButton ID="LinkButton2" runat="server" CssClass="btn btn-success"><i class="icon-off icon-white" ></i></asp:LinkButton>
+            <% End If %>
+            </li>
+         </ul>
+      <%--</div><!-- /.nav-collapse -->--%>
+    </div>
+  </div><!-- /navbar-inner -->
+</div>
+        <div id="divContenido">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <asp:ModalPopupExtender ID="TextBox1_ModalPopupExtender" runat="server" BackgroundCssClass="modalBackground"  
+            Enabled="True" TargetControlID="IBBuscador" PopupControlID="PanelBuscador" 
+            DropShadow="true" CancelControlID="LBCerrar" >
+        </asp:ModalPopupExtender>
+        <asp:Panel ID="PanelBuscador" runat="server" BackColor="#EAA32D" Height="200px" 
+                Width="600px" Font-Size="11pt" CssClass="btn-info">
+            <asp:Panel ID="PanelHeader" runat="server" HorizontalAlign="Right" 
+                Font-Strikeout="False" Font-Underline="False">
+            <asp:LinkButton ID="LBCerrar" runat="server" Font-Underline="False" 
+                    ForeColor="White" CssClass="label label-info">&nbsp;&nbsp;cerrar&nbsp;&nbsp;</asp:LinkButton>
+            </asp:Panel>
+<asp:UpdateProgress ID="UpdateProgressBuscador" runat="server" 
+                AssociatedUpdatePanelID="UpdatePanelBuscador">
+                <ProgressTemplate>BUSCANDO...</ProgressTemplate>
+</asp:UpdateProgress>
+<asp:UpdatePanel ID="UpdatePanelBuscador" runat="server" UpdateMode="Conditional">
+<ContentTemplate >
+<center>
+<div class="input-prepend search-query">
+            <asp:TextBox ID="TBBuscador" runat="server" ></asp:TextBox>
+            <asp:LinkButton ID="LinkButton1" runat="server" BorderColor="#BCC7D8" BorderStyle="Solid" BorderWidth="1px" CssClass="btn"><i class ="icon-search" ></i>&nbsp;&nbsp;Buscar</asp:LinkButton>
+</div>     
+</center>
+            <asp:Panel ID="Panel3" runat="server" ScrollBars="Auto" Font-Size="10pt" 
+                Height="100px" CssClass="well">
+            <asp:Repeater ID="Repeater1" runat="server" 
+                DataSourceID="SqlDataSourceBuscador">
+            <ItemTemplate>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/observacionPatronal/Default.aspx?razon=razon&regpat=" & Eval("regpat") %>' Target="_blank" Font-Underline="False">
+                    <asp:Label ID="Label3" runat="server" Text='<%# Eval("regpat") %>'></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text='<%# "(" & Eval("razonSocial") & ")" %>' Font-Italic="True"></asp:Label><br />
+                </asp:HyperLink>
+            </ItemTemplate>
+            </asp:Repeater>
+            </asp:Panel>
+            <asp:SqlDataSource ID="SqlDataSourceBuscador" runat="server" 
+                ConnectionString="<%$ ConnectionStrings:ConnectionStringMaster %>" 
+                
+                ProviderName="<%$ ConnectionStrings:ConnectionStringMaster.ProviderName %>" SelectCommand="DECLARE @BUSCAR as VARCHAR(50)
+SET @BUSCAR=?
+if @BUSCAR='%'
+begin
+SET @BUSCAR='cancelarBusqueda'
+end
+select top 20 regpat,razonSocial
+from sireca.dbo.patrones
+where (regpat like '%'+@BUSCAR+'%' or razonSocial like '%'+@BUSCAR+'%')">
+                <SelectParameters>
+                    <asp:ControlParameter ControlID="TBBuscador" DefaultValue="%" Name="?" 
+                        PropertyName="Text" />
+                </SelectParameters>
+            </asp:SqlDataSource>            
+</ContentTemplate> 
+</asp:UpdatePanel> 
+        </asp:Panel>
+        <asp:RoundedCornersExtender ID="PanelBuscador_RoundedCornersExtender" 
+            runat="server" Enabled="True" Radius="15" TargetControlID="PanelBuscador">
+        </asp:RoundedCornersExtender>
+
+<asp:ModalPopupExtender ID="ModalPopupExtender1" runat="server" Enabled="True" BackgroundCssClass="modalBackground" TargetControlID="IBInicion" PopupControlID="PanelMenu" DropShadow="true" CancelControlID="LBCerrarMenu" ></asp:ModalPopupExtender>
+<asp:Panel ID="PanelMenu" runat="server" Height="260px" Width="680px" Font-Size="11pt" CssClass="well">
+	<asp:Panel ID="PanelHeaderMenu" runat="server" HorizontalAlign="Right" Font-Strikeout="False" Font-Underline="False">
+	<asp:LinkButton ID="LBCerrarMenu" runat="server" Font-Underline="False" 
+            ForeColor="White" CssClass="label label-info">&nbsp;&nbsp;cerrar&nbsp;&nbsp;</asp:LinkButton>
+	</asp:Panel>
+    <table style="width: 100%;">
+        <tr>
+            <td align="center">
+                &nbsp;
+                <asp:ImageButton ID="IBCiclo1" runat="server" 
+                    ImageUrl="~/imagenes/sitios/ciclo1_menu.png" 
+                    PostBackUrl="~/principal/Ciclo1.aspx" CssClass="img-polaroid"/>
+            </td>
+            <td align="center">
+                &nbsp;
+                <asp:ImageButton ID="IBCiclo2" runat="server" 
+                    ImageUrl="~/imagenes/sitios/ciclo2_menu.png" 
+                    PostBackUrl="~/principal/Ciclo2.aspx" CssClass="img-polaroid"/>
+            </td>
+            <td align="center">
+                &nbsp;
+                <asp:ImageButton ID="IBCiclo3" runat="server" 
+                    ImageUrl="~/imagenes/sitios/ciclo3_menu.png" 
+                    PostBackUrl="~/principal/Ciclo3.aspx" CssClass="img-polaroid"/>
+            </td>
+        </tr>        
+    </table>
+</asp:Panel>
+<asp:RoundedCornersExtender ID="RoundedCornersExtender1" runat="server" Enabled="True" Radius="15" TargetControlID="PanelMenu"></asp:RoundedCornersExtender>
+    </div>
+    </form>
+</body>
+</html>

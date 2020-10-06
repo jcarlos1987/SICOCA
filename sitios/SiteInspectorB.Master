@@ -1,0 +1,288 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="SiteInspectorB.Master.vb" Inherits="WebSIRECA.SiteInspectorB" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">    
+<link id="Link1" runat ="server" rel="Shortcut Icon" href="~/sireca.ico" type="image/x-icon" />
+<link id="Link2" runat ="server" rel="Icon" href="~/sireca.ico" type="image/ico" />
+    <link href="../css/sireca.css" rel="stylesheet" type="text/css" />
+    <script src="../js/sireca.js" type="text/javascript"></script>
+    <title>SIRECA CICLO 2</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <asp:ScriptManager ID="ScriptManagerMaster" runat="server" EnableScriptGlobalization="true" EnableScriptLocalization="true"></asp:ScriptManager>
+            <table style="width:100%;" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="3">
+                        <div id="hearder">
+                            <table style="width:100%;" border="0" cellpadding="0" cellspacing="0" 
+                                frame="void">
+                                <tr bgcolor="#FBFAF8">
+                                    <td align="left">
+                                        <asp:ImageButton ID="ImageButton2" runat="server" 
+                                            ImageUrl="~/imagenes/sitios/imss_principal.jpg" ToolTip="IMSS" 
+                                            ImageAlign="AbsMiddle" />
+                                    </td>
+                                    <td style="vertical-align: bottom">
+                                        &nbsp;</td>
+                                    <td align="right">
+                                            <% If Session.Item("SIRECAuser") Is Nothing Then %>
+                                            <% Else %>
+                                            <asp:ImageButton ID="IBFotoUsuario" runat="server" 
+                                            ImageUrl="~/imagenes/usuarios/avatar/usuarioSireca.jpg" ImageAlign="AbsMiddle" 
+                                                Height="80px" Width="80px" />
+                                            <% End If %>
+                                        <asp:ImageButton ID="ImageButton1" runat="server" 
+                                            ImageUrl="~/imagenes/sitios/sireca.png" PostBackUrl="~/principal/Default.aspx" 
+                                            ToolTip="SIRECA" ImageAlign="AbsMiddle" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#6699CC">
+                                       <% If Session.Item("SIRECAuser") Is Nothing Then %><% Else %>Bienvenido: <%: Session.Item("SIRECAnombre").ToString() %><% End If %>
+                                        </td>
+                                    <td bgcolor="#6699CC">
+                                    <asp:UpdatePanel ID="UPanelMenu" runat="server" UpdateMode="Conditional">
+                                        <ContentTemplate >
+                                        <table border="0" cellpadding="0" cellspacing="0" >
+                                    <tr>
+                                    <td>
+                                        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+                                            RenderingMode="Table">
+                                            <DynamicHoverStyle BackColor="#3870A7" />
+                                            <DynamicMenuItemStyle BackColor="#6699CC" />
+                                            <DynamicSelectedStyle BackColor="#3870A7" />
+                                            <Items>
+                                                <asp:MenuItem ImageUrl="~/imagenes/sitios/menuCiclos.png">
+                                                    
+                                                    <asp:MenuItem Text="1° CICLO" 
+                                                        Value="1° CICLO">
+                                                        <asp:MenuItem NavigateUrl="~/pag_asps/capturaincidencianotificacion.aspx" Text="CAPTURAR DILIGENCIA" 
+                                                            Value="CAPTURA"></asp:MenuItem>
+                                                        <asp:MenuItem NavigateUrl="~/pag_asps/inicio.aspx" Text="PAGINA PRINCIPAL" 
+                                                            Value="PAGINA PRINCIPAL"></asp:MenuItem>
+                                                    </asp:MenuItem>
+                                                    <asp:MenuItem 
+                                                        Text="2° CICLO" Value="2° CICLO">
+                                                        <asp:MenuItem NavigateUrl="~/cobrosv2/capturadiligencia.aspx" 
+                                                            Text="*CAPTURAR CODIGO DE BARRA" Value="*CAPTURAR CODIGO DE BARRA">
+                                                        </asp:MenuItem>
+                                                        <asp:MenuItem NavigateUrl="~/cobrosv2/asignacionescreditos.aspx?tipo=2" 
+                                                            Text="*IMPRIMIR INFORME" Value="*IMPRIMIR INFORME"></asp:MenuItem>
+                                                        <asp:MenuItem NavigateUrl="~/pag_cobros/capturadeincidencia.aspx" 
+                                                            Text="CAPTURA DILIGENCIA" Value="CAPTURA"></asp:MenuItem>
+                                                        <asp:MenuItem NavigateUrl="~/informesPDF/cobros/inspector/Default.aspx?tipo=IB" 
+                                                            Text="INFORME DE DILIGENCIA" Value="INFORME DE DILIGENCIA"></asp:MenuItem>
+                                                        <asp:MenuItem NavigateUrl="~/informesPDF/cobros/inspector/reporteasignacionpae.aspx?tipo=IB"
+                                                            Text="INFORME DE ASIGNACION" Value="INFORME DE ASIGNACION"></asp:MenuItem>
+                                                    </asp:MenuItem>
+                                                </asp:MenuItem>
+                                            </Items>
+                                        </asp:Menu>
+                                        </td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td>
+                                            &nbsp;</td>
+                                        <td>
+                                            <asp:GridView ID="GridViewMensajes" runat="server" AutoGenerateColumns="False" Visible ='<%#IIF(Session.Item ("SIRECAalerta").ToString().equals("1"),"True","False")%>' 
+                                                BorderStyle="None" DataSourceID="SqlDataSourceMensajes" GridLines="None" 
+                                                ShowHeader="False">
+                                                <Columns>
+                                                    <asp:TemplateField>
+                                                        <ItemTemplate>
+                                                            <asp:HyperLink ID="HyperLink1" runat="server" Font-Underline="False" 
+                                                                NavigateUrl="~/mensajesobservacioncomentarios.aspx?tipo=IB" 
+                                                                ToolTip="Leer Mensajes Nuevos (menores a 6 días de su publicación)">&nbsp;&nbsp;
+                                                                <asp:Image ID="Image1" runat="server" 
+                                                                ImageUrl="~/imagenes/sitios/correo.png" BorderStyle="None" Width="32" 
+                                                                ImageAlign="AbsMiddle" /><asp:Label
+                                                                    ID="Label1" runat="server" 
+                                                                Text='<%# "( " & Eval("MENSAJES") & " )" %>'></asp:Label></asp:HyperLink>
+                                                        </ItemTemplate>
+                                                        <ItemStyle Font-Italic="True" ForeColor="Red" />
+                                                    </asp:TemplateField>
+                                                </Columns>
+                                            </asp:GridView>
+                                            <asp:SqlDataSource ID="SqlDataSourceMensajes" runat="server" 
+                                                ConnectionString="<%$ ConnectionStrings:ConnectionStringMaster %>" 
+                                                
+                                                ProviderName="<%$ ConnectionStrings:ConnectionStringMaster.ProviderName %>" SelectCommand="DECLARE @USER_TYPE as VARCHAR(4)
+DECLARE @INSPECTOR as VARCHAR(6)
+DECLARE @SUBDEL as VARCHAR(6)
+SET @USER_TYPE=?
+SET @INSPECTOR=?
+SET @SUBDEL=?
+
+if @USER_TYPE='0'
+begin 
+	SET @INSPECTOR='%'
+end
+if @SUBDEL='00'
+begin 
+	SET @SUBDEL='%'
+end
+
+SELECT count(*) as MENSAJES
+FROM [sirecaObservaciones].[dbo].[observacionPatronal] as ob 
+left join
+[sirecaObservaciones].[dbo].[comentarioObservacion] as cob
+on ob.id=cob.[idObservacion]
+left join
+[sirecacobros].[dbo].[CO_CPATRONAL]
+on [CP_REGPAT]=idRegpat
+where (datediff(day,ob.[fechaSystema],getdate())&lt;6 or datediff(day,cob.[fechaSystema],getdate())&lt;6)
+and [CP_INSPEC] like @INSPECTOR
+and CP_SUBDEL like @SUBDEL
+">
+                                                <SelectParameters>
+                                                    <asp:SessionParameter DefaultValue="1" Name="?" 
+                                                        SessionField="SIRECAuser_type" />
+                                                    <asp:SessionParameter DefaultValue="99999" Name="?" SessionField="SIRECAid" />
+                                                    <asp:SessionParameter DefaultValue="00" Name="?" SessionField="SIRECAsubdel" />
+                                                </SelectParameters>
+                                            </asp:SqlDataSource>
+                                        </td>
+                                    </tr>
+                                    </table>                                    
+                                        </ContentTemplate>
+                                        </asp:UpdatePanel>
+                                    </td>
+                                    <td align="right" bgcolor="#6699CC">
+                                        &nbsp;
+                                        &nbsp;<asp:ImageButton ID="IBBuscador" runat="server"                                             
+                                            ImageUrl="~/imagenes/sitios/buscar.png" ImageAlign="AbsMiddle" 
+                                            ToolTip="Buscar por Registro Patronal ó Razon Social"/>        
+        &nbsp;&nbsp;
+                                        <asp:ImageButton ID="IBInicion" runat="server" 
+                                            PostBackUrl="~/principal/Menu.aspx" 
+                                            ImageUrl="~/imagenes/sitios/menuPrincipal.png" ImageAlign="AbsMiddle" 
+                                            ToolTip="MENU PRINCIPAL" />&nbsp;
+                                            <% If Session.Item("SIRECAuser") Is Nothing Then %>
+                                            <asp:ImageButton ID="IBIniciarSesion" runat="server" ToolTip="INICIAR SESION" 
+                                            ImageAlign="AbsMiddle" ImageUrl="~/imagenes/sitios/iniciarSesion.png" 
+                                            PostBackUrl="~/Login.aspx" />&nbsp;
+                                            <% Else %>
+                                            <asp:ImageButton ID="IBCerrarSesion" runat="server" ToolTip="CERRAR SESION" 
+                                            ImageAlign="AbsMiddle" ImageUrl="~/imagenes/sitios/cerrarSesion.png" />&nbsp;
+                                            <% End If %>                                        
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        </td>
+                                    <td>
+                                        &nbsp;</td>
+                                    <td align="right">
+                                        <label>  
+                                        <asp:UpdatePanel ID="UPHora" runat="server" UpdateMode="Conditional">
+                                            <ContentTemplate>
+                                            <asp:Timer ID="Timer1" runat="server" Interval="60000"></asp:Timer>
+                                                <%:Now.ToLongDateString.ToString %>, <%: Now.ToShortTimeString%>
+                                            </ContentTemplate>
+                                            <Triggers>
+                                                <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
+                                            </Triggers>
+                                        </asp:UpdatePanel>
+                                       </label>
+                                       </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        <div id="divContenido">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                        </div> 
+                    </td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+            </table>
+                                
+        <asp:ModalPopupExtender ID="TextBox1_ModalPopupExtender" runat="server" BackgroundCssClass="modalBackground"  
+            Enabled="True" TargetControlID="IBBuscador" PopupControlID="PanelBuscador" 
+            DropShadow="true" CancelControlID="LBCerrar" >
+        </asp:ModalPopupExtender>
+        <asp:Panel ID="PanelBuscador" runat="server" BackColor="#EAA32D" Height="200px" 
+                Width="600px" Font-Size="11pt" >
+            <asp:Panel ID="PanelHeader" runat="server" HorizontalAlign="Right" 
+                Font-Strikeout="False" Font-Underline="False">
+            <asp:LinkButton ID="LBCerrar" runat="server" Font-Underline="False">cerrar&nbsp;&nbsp;</asp:LinkButton>
+            </asp:Panel>
+<asp:UpdateProgress ID="UpdateProgressBuscador" runat="server" 
+                AssociatedUpdatePanelID="UpdatePanelBuscador">
+                <ProgressTemplate>BUSCANDO...</ProgressTemplate>
+</asp:UpdateProgress>
+<asp:UpdatePanel ID="UpdatePanelBuscador" runat="server" UpdateMode="Conditional">
+<ContentTemplate >
+            <asp:TextBox ID="TBBuscador" runat="server" BorderColor="#999999" 
+                BorderStyle="Solid" BorderWidth="1px"></asp:TextBox>
+            <asp:BalloonPopupExtender ID="TBBuscador_BalloonPopupExtender" runat="server" Enabled="True" 
+                TargetControlID="TBBuscador" BalloonPopupControlID="PanelMsg" 
+                BalloonSize="Medium">
+            </asp:BalloonPopupExtender>
+    <asp:Panel ID="PanelMsg" runat="server" Width="200px">
+    Escriba el Registro Patronal (sin el digito verificador) ó Razon Social y pulse buscar 
+    <br />sea presiso en su busqueda (muestra las primero 20 coinsidencias)
+    </asp:Panel>
+            <asp:LinkButton ID="LinkButton1" runat="server" BackColor="#BCC7D8" 
+                Font-Underline="False">&nbsp;&nbsp;Buscar&nbsp;&nbsp;</asp:LinkButton><br />
+            <asp:Panel ID="Panel3" runat="server" ScrollBars="Auto" Font-Size="10pt" 
+                Height="100px" BackColor="#FFCC66">
+            <asp:Repeater ID="Repeater1" runat="server" 
+                DataSourceID="SqlDataSourceBuscador">
+            <ItemTemplate>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "~/observacionPatronal/Default.aspx?razon=razon&regpat=" & Eval("regpat") %>' Target="_blank" Font-Underline="False">
+                    <asp:Label ID="Label3" runat="server" Text='<%# Eval("regpat") %>'></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text='<%# "(" & Eval("razonSocial") & ")" %>' Font-Italic="True"></asp:Label><br />
+                </asp:HyperLink>
+            </ItemTemplate>
+            </asp:Repeater>
+            </asp:Panel>
+            <asp:SqlDataSource ID="SqlDataSourceBuscador" runat="server" 
+                ConnectionString="<%$ ConnectionStrings:ConnectionStringMaster %>" 
+                ProviderName="<%$ ConnectionStrings:ConnectionStringMaster.ProviderName %>" SelectCommand="DECLARE @BUSCAR as VARCHAR(50)
+SET @BUSCAR=?
+if @BUSCAR='%'
+begin
+SET @BUSCAR='cancelarBusqueda'
+end
+select top 20 regpat,razonSocial
+from sireca.dbo.patrones
+where (regpat like '%'+@BUSCAR+'%' or razonSocial like '%'+@BUSCAR+'%')">
+                <SelectParameters>
+                    <asp:ControlParameter ControlID="TBBuscador" DefaultValue="%" Name="?" 
+                        PropertyName="Text" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+            
+</ContentTemplate> 
+</asp:UpdatePanel> 
+        </asp:Panel>
+        <asp:RoundedCornersExtender ID="PanelBuscador_RoundedCornersExtender" 
+            runat="server" Enabled="True" Radius="15" TargetControlID="PanelBuscador">
+        </asp:RoundedCornersExtender>
+    
+    </div>
+    </form>
+</body>
+</html>

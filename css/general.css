@@ -1,0 +1,168 @@
+BODY {
+	BACKGROUND-COLOR: #fff; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.left {
+	FLOAT: left
+}
+.float_left {
+	FLOAT: left
+}
+.right {
+	FLOAT: right
+}
+float_right {
+	FLOAT: right
+}
+.clear {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; OVERFLOW: hidden
+}
+.hide {
+	DISPLAY: none
+}
+.align_right {
+	TEXT-ALIGN: right
+}
+.align_left {
+	TEXT-ALIGN: left
+}
+.align_center {
+	TEXT-ALIGN: center
+}
+.align_justify {
+	TEXT-ALIGN: justify
+}
+A {
+	COLOR: #525252
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+A:focus {
+	TEXT-DECORATION: underline
+}
+A:active {
+	
+}
+A:visited {
+	
+}
+BLOCKQUOTE {
+	PADDING-BOTTOM: 10px; LINE-HEIGHT: 1.3em; FONT-STYLE: italic; MARGIN: 5px; PADDING-LEFT: 10px; WIDTH: 100%; PADDING-RIGHT: 10px; FONT-FAMILY: Georgia, "Times New Roman", Times, serif; COLOR: #999; FONT-SIZE: 1.52em; QUOTES: none; PADDING-TOP: 10px
+}
+BLOCKQUOTE.left {
+	WIDTH: 35%; BORDER-RIGHT: #ccc 1px dashed
+}
+BLOCKQUOTE.right {
+	BORDER-LEFT: #ccc 1px dashed; WIDTH: 35%
+}
+H1 {
+	LINE-HEIGHT: 1.1em; MARGIN: 0px 0px 0.5em
+}
+H2 {
+	LINE-HEIGHT: 1.1em; MARGIN: 0px 0px 0.5em
+}
+H3 {
+	LINE-HEIGHT: 1.1em; MARGIN: 0px 0px 0.5em
+}
+H4 {
+	LINE-HEIGHT: 1.1em; MARGIN: 0px 0px 0.5em
+}
+H5 {
+	LINE-HEIGHT: 1.1em; MARGIN: 0px 0px 0.5em
+}
+H1 {
+	FONT-SIZE: 2.52em
+}
+H2 {
+	FONT-SIZE: 1.95em
+}
+H3 {
+	FONT-SIZE: 1.65em
+}
+H4 {
+	FONT-SIZE: 1.45em
+}
+H5 {
+	FONT-SIZE: 1.25em
+}
+H6 {
+	FONT-SIZE: 1.52em
+}
+UL LI {
+	MARGIN-LEFT: 20px
+}
+P {
+	MARGIN: 0px 0px 1.52em
+}
+P IMG.left {
+	PADDING-BOTTOM: 0px; MARGIN: 1.52em 1.52em 1.52em 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 0px
+}
+P IMG.right {
+	MARGIN: 1.52em 0px 1.52em 1.52em; FLOAT: right
+}
+FORM FIELDSET {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; PADDING-LEFT: 5px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px
+}
+FORM FIELDSET LEGEND {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-SIZE: 1.4em; PADDING-TOP: 0px
+}
+FORM INPUT[type=text] {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 5px; HEIGHT: 20px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px
+}
+FORM INPUT[type=email] {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 5px; HEIGHT: 20px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px
+}
+FORM INPUT[type=url] {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 5px; HEIGHT: 20px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px
+}
+FORM INPUT[type=password] {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 5px; HEIGHT: 20px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px
+}
+FORM LABEL {
+	DISPLAY: block; HEIGHT: 20px; FONT-SIZE: 1.2em
+}
+STRONG {
+	FONT-WEIGHT: 600
+}
+EM {
+	FONT-STYLE: italic
+}
+DFN {
+	FONT-STYLE: italic
+}
+DFN {
+	FONT-WEIGHT: 600
+}
+SUP {
+	LINE-HEIGHT: 0
+}
+SUB {
+	LINE-HEIGHT: 0
+}
+ABBR {
+	BORDER-BOTTOM: #ccc 1px dashed
+}
+ACRONYM {
+	BORDER-BOTTOM: #ccc 1px dashed
+}
+ADDRESS {
+	FONT-STYLE: italic; MARGIN: 0px 0px 1.5em
+}
+DEL {
+	COLOR: #666
+}
+PRE {
+	DISPLAY: block; FONT: 1em/1.5 "andale mono", "lucida console", monospace
+}
+CODE {
+	DISPLAY: block; FONT: 1em/1.5 "andale mono", "lucida console", monospace
+}
+TT {
+	DISPLAY: block; FONT: 1em/1.5 "andale mono", "lucida console", monospace
+}
+CODE {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 1.67em; PADDING-LEFT: 26px; PADDING-RIGHT: 2px; DISPLAY: block; BACKGROUND: url(code.jpg) #fff no-repeat left top; PADDING-TOP: 0px
+}
+PRE {
+	MARGIN: 1.5em 0px; WHITE-SPACE: pre
+}

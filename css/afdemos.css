@@ -1,0 +1,45 @@
+header {
+	POSITION: relative; MARGIN-BOTTOM: 5px
+}
+header .logo {
+	FILTER: Shadow(Color=#666666, Direction=135, Strength=3); PADDING-LEFT: 40px; WIDTH: auto; HEIGHT: 80px; COLOR: #fff; FONT-SIZE: 3.3em; FONT-WEIGHT: 700; PADDING-TOP: 28px; text-shadow: 1px 1px 2px #000
+}
+header .statement {
+	TEXT-ALIGN: right; WIDTH: 20%; PADDING-TOP: 30px
+}
+nav {
+	MARGIN: 0px auto; PADDING-LEFT: 15px; WIDTH: 960px; HEIGHT: 40px; COLOR: #fff; OVERFLOW: hidden
+}
+nav UL {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+nav UL LI {
+	FLOAT: left; MARGIN-LEFT: 5px
+}
+nav UL LI A {
+	PADDING-BOTTOM: 8px; MARGIN-TOP: 7px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; COLOR: #fff; TEXT-DECORATION: none; PADDING-TOP: 8px; -moz-border-radius-topright: 10px; -webkit-border-top-right-radius: 10px; -moz-border-radius-topleft: 10px; -webkit-border-top-left-radius: 10px
+}
+nav UL LI A:hover {
+	BACKGROUND-COLOR: #fff; COLOR: #000
+}
+nav UL LI.active A {
+	BACKGROUND-COLOR: #fff; COLOR: #000
+}
+aside {
+	MIN-HEIGHT: 525px
+}
+.submit {
+	BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; PADDING-BOTTOM: 6px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: inline-block; MARGIN-BOTTOM: 5px; BACKGROUND: #525252; COLOR: #fff; BORDER-TOP: medium none; CURSOR: pointer; BORDER-RIGHT: medium none; PADDING-TOP: 5px; text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5)
+}
+.submit:visited {
+	BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; PADDING-BOTTOM: 6px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: inline-block; MARGIN-BOTTOM: 5px; BACKGROUND: #525252; COLOR: #fff; BORDER-TOP: medium none; CURSOR: pointer; BORDER-RIGHT: medium none; PADDING-TOP: 5px; text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25); -webkit-border-radius: 5px; -moz-border-radius: 5px; -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5)
+}
+#copyright {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #2f2f2f 1px solid; PADDING-TOP: 10px
+}
+P#copyinfo {
+	FLOAT: right; COLOR: #737171; text-shadow: 1px 1px 1px #000000
+}
+#copyright A {
+	COLOR: #9a9999
+}

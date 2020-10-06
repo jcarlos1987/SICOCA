@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<markers>
+  <marker idcve="L" actividad="LOCALIZADO" />
+  <marker idcve="PP" actividad="PAGO PENDIENTE" />
+  <marker idcve="I" actividad="EN INVESTIGACION" />
+  <marker idcve="NULO" actividad="- - -Seleccionar- - -" />
+  <marker idcve="0000" actividad="SIN ASIGNAR" />
+  <marker idcve="1111" actividad="AUTODETERMINADOS" />
+  <marker idcve="2222" actividad="NO LOCALIZADOS" />
+  <marker idcve="3333" actividad="CAMBIO DE SUBDELEGACION" />
+  <marker idcve="4444" actividad="CONVENIO" />
+  <marker idcve="5555" actividad="DEPURADOS" />
+  <marker idcve="6666" actividad="ASIGNADOS" />
+  <marker idcve="SIN ATENDER" actividad="SIN ATENDER" />
+  <marker idcve="18" actividad="EN CERTIFICACION DE PAGO" />
+  <marker idcve="19" actividad="EN CONCURSO MERCANTIL" />
+  <marker idcve="20" actividad="ACTOS ADMVOS. DE AUDITORIA POR NOTIFICAR" />
+  <marker idcve="21" actividad="EN ACLARACION ANTE AUDTORIA" />
+  <marker idcve="22" actividad="EN CUMPLIMIENTO DE LAUDO O SENTENCIA" />
+  <marker idcve="23" actividad="MULTA EN TRAMITE DE CONDONACION" />
+  <marker idcve="25" actividad="PAGO EN CONCILIACION" />
+  <marker idcve="26" actividad="RESPONSABILIDAD SOLIDARIA" />
+  <marker idcve="x" actividad="- Seleccione -" />
+  <marker idcve="32" actividad="EMB. BIENES MUEB. DEPOS. AJENA IMSS" />
+  <marker idcve="33" actividad="EMB. BIENES MUEB. DEPOS. IMSS" />
+  <marker actividad="SIN TRAMITE" />
+  <marker actividad="CITATORIO" />
+  <marker idcve="DEPURADO RALE" actividad="DEPURACION RALE" />
+  <marker actividad="EN TRAMITE DE CONDONACION" />
+  <marker idcve="RB" actividad="RECAUDACION BANCARIA" />
+  <marker idcve="RDB" actividad="REMOCION DE BIENES" />
+  <marker idcve="PAGOS_PARCIALES" actividad="PAGOS PARCIALES" />
+  <marker idcve="SAC" actividad="SIN ACCIONES" />
+  <marker idcve="SIPARE" actividad="SIPARE" />
+  <marker idcve="RE" actividad="RECAUDACION EXACTORA" />
+  <marker idcve="BD" actividad="BAJA DEFINITIVA" />
+  <marker idcve="PAGADO" actividad="PAGADO" />
+  <marker idcve="POR PROCESAR" actividad="POR PROCESAR" />
+  <marker idcve="EC" actividad="EMBARGO DE CUENTAS" />
+  <marker idcve="R" actividad="REQUERIMIENTOS" />
+  <marker idcve="SP" actividad="SEPOMEX" />
+  <marker idcve="C" actividad="CANCELADO" />
+  <marker idcve="DV" actividad="DEVUELTOS" />
+  <marker idcve="0" actividad="POR ASIGNAR" />
+  <marker idcve="1" actividad="POR NOTIFICAR" />
+  <marker idcve="2" actividad="NOTIFICADO" />
+  <marker idcve="3" actividad="EN ACLARACION" />
+  <marker idcve="4" actividad="EN PAE" />
+  <marker idcve="5" actividad="SOLICITUD DE CONVENIO" />
+  <marker idcve="6" actividad="INCONFORMIDAD" />
+  <marker idcve="7" actividad="FIANZA EN TRAMITE DE EFECTIVIDAD" />
+  <marker idcve="8" actividad="COBRANZA ESPECIAL" />
+  <marker idcve="9" actividad="NO LOCALIZADO" />
+  <marker idcve="10" actividad="SUSTITUCION PATRONAL" />
+  <marker idcve="11" actividad="SISTEMA DE COMPENSACION DE ADEUDO" />
+  <marker idcve="12" actividad="HUELGA" />
+  <marker idcve="13" actividad="ENVIADOS EN PROCURACION" />
+  <marker idcve="14" actividad="JUICIO FISCAL" />
+  <marker idcve="15" actividad="RECURSO DE REVOCACION" />
+  <marker idcve="16" actividad="PATRONES INSOLVENTES" />
+  <marker idcve="17" actividad="CONVENIO" />
+  <marker idcve="31" actividad="POR INICIAR TRAMITE" />
+  <marker idcve="EM" actividad="EMBARGO DE MUEBLES" />
+  <marker idcve="EI" actividad="EMBARGO DE INMUEBLES" />
+  <marker idcve="35" actividad="EMBARGO DE NEGOCIACION" />
+  <marker idcve="36" actividad="EMPRESAS ADMINISTRADAS" />
+  <marker idcve="37" actividad="BIENES VALUADOS PARA REMATE" />
+  <marker idcve="38" actividad="EN AUTORIZACION PARA REMATE" />
+  <marker idcve="39" actividad="PRIMERA ALMONEDA" />
+  <marker idcve="40" actividad="SEGUNDA ALMONEDA" />
+  <marker idcve="41" actividad="VENTA FUERA DE SUBASTA" />
+  <marker idcve="42" actividad="TRAMITE DE CONSTITUCION DE GARANTIA" />
+  <marker idcve="51" actividad="CANCELACION" />
+  <marker idcve="52" actividad="CONVENIO CON PLAZO" />
+  <marker idcve="53" actividad="CONVENIO CON PLAZO Y CONDONACION" />
+  <marker idcve="54" actividad="REESTRUCTURACION" />
+  <marker idcve="55" actividad="REHABILITACION" />
+  <marker idcve="60" actividad="CAMBIO DE SUB" />
+  <marker idcve="61" actividad="QUIEBRA" />
+  <marker idcve="A" actividad="AUTODETERMINADO" />
+</markers>
